@@ -1,0 +1,30 @@
+{
+  "tag": "v2.26.5",
+  "sha": "7a4abfb2033935498256044e01bc0049ec80d76c",
+  "files": [
+    {
+      "path": "LICENSE",
+      "gitBlob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    },
+    {
+      "path": "c/lib.cpp",
+      "gitBlob": "941f8928f6710fe3d4212c9da8958a39844a93e3"
+    },
+    {
+      "path": "c/usearch.h",
+      "gitBlob": "49ec2a51ec744a8269b1303180eafd65efa6aca7"
+    },
+    {
+      "path": "include/usearch/index.hpp",
+      "gitBlob": "82e212f8a26f783cb245c18b6ebe263736edea82"
+    },
+    {
+      "path": "include/usearch/index_dense.hpp",
+      "gitBlob": "381d1eb3730c8ee7d9cf4ad47ccc586a30d2e2c6"
+    },
+    {
+      "path": "include/usearch/index_plugins.hpp",
+      "gitBlob": "646adabe0a71999b9ecbc52641f9c59f829bc571"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+USearch v2.26.5, Copyright 2023 Unum Cloud. Apache License 2.0.
+Upstream commit: 7a4abfb2033935498256044e01bc0049ec80d76c.
+This distribution includes modified vector arena allocation (32 MiB maximum),
+filtered searches, direct JS-source restore and bounded snapshot serialization.
+The graph allocator retains upstream behavior. Sources and build instructions
+are in vendor/usearch and scripts/build-usearch.ps1 in the project repository.

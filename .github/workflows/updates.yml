@@ -1,0 +1,40 @@
+name: Stable update feed
+
+on:
+  workflow_call:
+  workflow_dispatch:
+  public:
+  release:
+    types: [published, edited, deleted, unpublished]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: stable-update-feed
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.23.1
+          cache: npm
+      - run: npm ci --include=optional
+      - run: node --test test/update-feed.test.mjs
+      - name: Verify stable assets; publish only for a public repository
+        run: node scripts/update-feed.mjs --publish
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: verified-update-feed
+          path: .scaffold/update-feed/updates.json
+          if-no-files-found: error

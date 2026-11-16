@@ -1,0 +1,61 @@
+name: Plugin checks
+
+on:
+  push:
+    branches: [main]
+    # SQL fixtures under docs/development remain plugin-test inputs.
+    paths-ignore:
+      - "**/*.md"
+      - ".agents/**"
+      - docs/user/**
+      - docs/theme/**
+      - docs/assets/**
+      - docs/development/figures/**
+      - docs/requirements.txt
+      - mkdocs.yml
+      - .github/workflows/docs.yml
+      - scripts/check-docs-locales.py
+  pull_request:
+    paths-ignore:
+      - "**/*.md"
+      - ".agents/**"
+      - docs/user/**
+      - docs/theme/**
+      - docs/assets/**
+      - docs/development/figures/**
+      - docs/requirements.txt
+      - mkdocs.yml
+      - .github/workflows/docs.yml
+      - scripts/check-docs-locales.py
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: checks-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Node 22 / ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.23.1
+          cache: npm
+      - run: npm ci --include=optional
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run database:check
+      - uses: actions/upload-artifact@v4
+        with:
+          name: zotero-knowledge-mcp-${{ matrix.os }}
+          path: .scaffold/build/zotero-knowledge-mcp.xpi
+          if-no-files-found: error

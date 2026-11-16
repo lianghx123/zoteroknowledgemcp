@@ -1,0 +1,1049 @@
+{
+  "provenance": {
+    "description": "Synthetic cases evaluated by the original integration Python implementation; no runtime dependency on Python or the reference checkout.",
+    "sha256": {
+      "worker\\parse_worker\\transform.py": "9b68d220389b942d3d37a2630963dd1c5d18dcafcba44861939e0aac456516c9",
+      "services\\content_quality.py": "34c943afbbfaa8ecc239bc823ca0ef9dabf9bbf9aab414425c8e667f26668363"
+    }
+  },
+  "cases": [
+    {
+      "pages": [
+        {
+          "prunedResult": {
+            "width": 600,
+            "height": 800,
+            "model_settings": {
+              "use_layout_detection": true
+            },
+            "parsing_res_list": [
+              {
+                "block_label": "doc_title",
+                "block_content": "中文合成论文",
+                "block_id": 0,
+                "global_block_id": "g0",
+                "block_order": 0,
+                "block_bbox": [
+                  10,
+                  0,
+                  500,
+                  8
+                ]
+              },
+              {
+                "block_label": "header",
+                "block_content": "Header",
+                "block_id": 1,
+                "global_block_id": "g1",
+                "block_order": 1,
+                "block_bbox": [
+                  10,
+                  10,
+                  500,
+                  18
+                ]
+              },
+              {
+                "block_label": "abstract",
+                "block_content": "这是跨页摘要的前半部分，",
+                "block_id": 2,
+                "global_block_id": "g2",
+                "block_order": 2,
+                "block_bbox": [
+                  10,
+                  20,
+                  500,
+                  28
+                ]
+              }
+            ]
+          },
+          "markdown": {
+            "images": {}
+          }
+        },
+        {
+          "prunedResult": {
+            "width": 600,
+            "height": 800,
+            "model_settings": {
+              "use_layout_detection": true
+            },
+            "parsing_res_list": [
+              {
+                "block_label": "abstract",
+                "block_content": "后半部分。",
+                "block_id": 3,
+                "global_block_id": "g3",
+                "block_order": 3,
+                "block_bbox": [
+                  10,
+                  30,
+                  500,
+                  38
+                ]
+              },
+              {
+                "block_label": "paragraph_title",
+                "block_content": "一、方法",
+                "block_id": 4,
+                "global_block_id": "g4",
+                "block_order": 4,
+                "block_bbox": [
+                  10,
+                  40,
+                  500,
+                  48
+                ]
+              },
+              {
+                "block_label": "text",
+                "block_content": "This paragraph continues across",
+                "block_id": 5,
+                "global_block_id": "g5",
+                "block_order": 5,
+                "block_bbox": [
+                  10,
+                  50,
+                  500,
+                  58
+                ]
+              }
+            ]
+          },
+          "markdown": {
+            "images": {}
+          }
+        },
+        {
+          "prunedResult": {
+            "width": 600,
+            "height": 800,
+            "model_settings": {
+              "use_layout_detection": true
+            },
+            "parsing_res_list": [
+              {
+                "block_label": "header",
+                "block_content": "Header",
+                "block_id": 6,
+                "global_block_id": "g6",
+                "block_order": 6,
+                "block_bbox": [
+                  10,
+                  60,
+                  500,
+                  68
+                ]
+              },
+              {
+                "block_label": "text",
+                "block_content": "physical pages without a final stop.",
+                "block_id": 7,
+                "global_block_id": "g7",
+                "block_order": 7,
+                "block_bbox": [
+                  10,
+                  70,
+                  500,
+                  78
+                ]
+              },
+              {
+                "block_label": "paragraph_title",
+                "block_content": "Details",
+                "block_id": 8,
+                "global_block_id": "g8",
+                "block_order": 8,
+                "block_bbox": [
+                  10,
+                  80,
+                  500,
+                  88
+                ]
+              },
+              {
+                "block_label": "display_formula",
+                "block_content": "$$ x + y = z $$",
+                "block_id": 9,
+                "global_block_id": "g9",
+                "block_order": 9,
+                "block_bbox": [
+                  10,
+                  90,
+                  500,
+                  98
+                ]
+              },
+              {
+                "block_label": "formula_number",
+                "block_content": "(1)",
+                "block_id": 10,
+                "global_block_id": "g10",
+                "block_order": 10,
+                "block_bbox": [
+                  10,
+                  100,
+                  500,
+                  108
+                ]
+              },
+              {
+                "block_label": "table",
+                "block_content": "<table><tr><th colspan=\"2\">A &amp; B</th></tr><tr><td rowspan=\"2\">C</td><td>D</td></tr></table>",
+                "block_id": 11,
+                "global_block_id": "g11",
+                "block_order": 11,
+                "block_bbox": [
+                  10,
+                  110,
+                  500,
+                  118
+                ]
+              },
+              {
+                "block_label": "figure_title",
+                "block_content": "Figure <1> & values",
+                "block_id": 12,
+                "global_block_id": "g12",
+                "block_order": 12,
+                "block_bbox": [
+                  10,
+                  120,
+                  500,
+                  128
+                ]
+              },
+              {
+                "block_label": "footnote",
+                "block_content": "Footnote text with source details.",
+                "block_id": 13,
+                "global_block_id": "g13",
+                "block_order": 13,
+                "block_bbox": [
+                  10,
+                  130,
+                  500,
+                  138
+                ]
+              },
+              {
+                "block_label": "reference_content",
+                "block_content": "Smith et al.",
+                "block_id": 14,
+                "global_block_id": "g14",
+                "block_order": 14,
+                "block_bbox": [
+                  10,
+                  140,
+                  500,
+                  148
+                ]
+              }
+            ]
+          },
+          "markdown": {
+            "images": {}
+          }
+        },
+        {
+          "prunedResult": {
+            "width": 600,
+            "height": 800,
+            "model_settings": {
+              "use_layout_detection": true
+            },
+            "parsing_res_list": [
+              {
+                "block_label": "reference_content",
+                "block_content": "A reference continued on a later page.",
+                "block_id": 15,
+                "global_block_id": "g15",
+                "block_order": 15,
+                "block_bbox": [
+                  10,
+                  150,
+                  500,
+                  158
+                ]
+              },
+              {
+                "block_label": "paragraph_title",
+                "block_content": "二、结果",
+                "block_id": 16,
+                "global_block_id": "g16",
+                "block_order": 16,
+                "block_bbox": [
+                  10,
+                  160,
+                  500,
+                  168
+                ]
+              },
+              {
+                "block_label": "text",
+                "block_content": "Keywords: alpha, beta",
+                "block_id": 17,
+                "global_block_id": "g17",
+                "block_order": 17,
+                "block_bbox": [
+                  10,
+                  170,
+                  500,
+                  178
+                ]
+              },
+              {
+                "block_label": "text",
+                "block_content": "Authors: Alice, Bob",
+                "block_id": 18,
+                "global_block_id": "g18",
+                "block_order": 18,
+                "block_bbox": [
+                  10,
+                  180,
+                  500,
+                  188
+                ]
+              },
+              {
+                "block_label": "text",
+                "block_content": "doi:10.1000/example",
+                "block_id": 19,
+                "global_block_id": "g19",
+                "block_order": 19,
+                "block_bbox": [
+                  10,
+                  190,
+                  500,
+                  198
+                ]
+              },
+              {
+                "block_label": "text",
+                "block_content": "??? ?? �",
+                "block_id": 20,
+                "global_block_id": "g20",
+                "block_order": 20,
+                "block_bbox": [
+                  10,
+                  200,
+                  500,
+                  208
+                ]
+              },
+              {
+                "block_label": "text",
+                "block_content": "&#65; &copy; &notit; &#x80; &amp &#0; &NotEqualTilde; \\alpha",
+                "block_id": 21,
+                "global_block_id": "g21",
+                "block_order": 21,
+                "block_bbox": [
+                  10,
+                  210,
+                  500,
+                  218
+                ]
+              },
+              {
+                "block_label": "display_formula",
+                "block_content": "$$ y \\tag{2} $$",
+                "block_id": 22,
+                "global_block_id": "g22",
+                "block_order": 22,
+                "block_bbox": [
+                  10,
+                  220,
+                  500,
+                  228
+                ]
+              },
+              {
+                "block_label": "formula_number",
+                "block_content": "(3)",
+                "block_id": 23,
+                "global_block_id": "g23",
+                "block_order": 23,
+                "block_bbox": [
+                  10,
+                  230,
+                  500,
+                  238
+                ]
+              }
+            ]
+          },
+          "markdown": {
+            "images": {}
+          }
+        }
+      ],
+      "expected": {
+        "blocks": [
+          {
+            "type": "heading",
+            "label": "doc_title",
+            "markdown": "# 中文合成论文",
+            "text": "中文合成论文",
+            "page": 1,
+            "pageEnd": 1,
+            "sourceIDs": [
+              "g0"
+            ],
+            "metadata": {
+              "cross_page_merged": false
+            },
+            "qualityFlags": []
+          },
+          {
+            "type": "abstract",
+            "label": "abstract",
+            "markdown": "这是跨页摘要的前半部分，后半部分。",
+            "text": "这是跨页摘要的前半部分，后半部分。",
+            "page": 1,
+            "pageEnd": 2,
+            "sourceIDs": [
+              "g2",
+              "g3"
+            ],
+            "metadata": {
+              "cross_page_merged": true
+            },
+            "qualityFlags": []
+          },
+          {
+            "type": "heading",
+            "label": "paragraph_title",
+            "markdown": "## 一、方法",
+            "text": "一、方法",
+            "page": 2,
+            "pageEnd": 2,
+            "sourceIDs": [
+              "g4"
+            ],
+            "metadata": {
+              "cross_page_merged": false
+            },
+            "qualityFlags": []
+          },
+          {
+            "type": "paragraph",
+            "label": "text",
+            "markdown": "This paragraph continues across physical pages without a final stop.",
+            "text": "This paragraph continues across physical pages without a final stop.",
+            "page": 2,
+            "pageEnd": 3,
+            "sourceIDs": [
+              "g5",
+              "g7"
+            ],
+            "metadata": {
+              "cross_page_merged": true
+            },
+            "qualityFlags": []
+          },
+          {
+            "type": "heading",
+            "label": "paragraph_title",
+            "markdown": "### Details",
+            "text": "Details",
+            "page": 3,
+            "pageEnd": 3,
+            "sourceIDs": [
+              "g8"
+            ],
+            "metadata": {
+              "cross_page_merged": false
+            },
+            "qualityFlags": []
+          },
+          {
+            "type": "formula",
+            "label": "display_formula",
+            "markdown": "$$ x + y = z \\tag*{(1)}$$",
+            "text": "$$ x + y = z \\tag*{(1)}$$",
+            "page": 3,
+            "pageEnd": 3,
+            "sourceIDs": [
+              "g9"
+            ],
+            "metadata": {
+              "cross_page_merged": false
+            },
+            "qualityFlags": [
+              "formula_only",
+              "short_fragment"
+            ]
+          },
+          {
+            "type": "table",
+            "label": "table",
+            "markdown": "<table border=1 style='margin: auto; word-wrap: break-word;'><tr><th colspan=\"2\">A &amp; B</th></tr><tr><td rowspan=\"2\">C</td><td>D</td></tr></table>",
+            "text": "A & B C D",
+            "page": 3,
+            "pageEnd": 3,
+            "sourceIDs": [
+              "g11"
+            ],
+            "metadata": {
+              "cross_page_merged": false
+            },
+            "qualityFlags": [
+              "table"
+            ]
+          },
+          {
+            "type": "caption",
+            "label": "figure_title",
+            "markdown": "<div style=\"text-align: center;\">Figure &lt;1&gt; &amp; values</div>",
+            "text": "Figure <1> & values",
+            "page": 3,
+            "pageEnd": 3,
+            "sourceIDs": [
+              "g12"
+            ],
+            "metadata": {
+              "cross_page_merged": false
+            },
+            "qualityFlags": []
+          },
+          {
+            "type": "footnote",
+            "label": "footnote",
+            "markdown": "> Footnote text with source details.",
+            "text": "Footnote text with source details.",
+            "page": 3,
+            "pageEnd": 3,
+            "sourceIDs": [
+              "g13"
+            ],
+            "metadata": {
+              "cross_page_merged": false
+            },
+            "qualityFlags": []
+          },
+          {
+            "type": "reference",
+            "label": "reference_content",
+            "markdown": "Smith et al.",
+            "text": "Smith et al.",
+            "page": 3,
+            "pageEnd": 3,
+            "sourceIDs": [
+              "g14"
+            ],
+            "metadata": {
+              "cross_page_merged": false
+            },
+            "qualityFlags": [
+              "reference_entry",
+              "short_fragment"
+            ]
+          },
+          {
+            "type": "reference",
+            "label": "reference_content",
+            "markdown": "A reference continued on a later page.",
+            "text": "A reference continued on a later page.",
+            "page": 4,
+            "pageEnd": 4,
+            "sourceIDs": [
+              "g15"
+            ],
+            "metadata": {
+              "cross_page_merged": false
+            },
+            "qualityFlags": [
+              "reference_entry"
+            ]
+          },
+          {
+            "type": "heading",
+            "label": "paragraph_title",
+            "markdown": "## 二、结果",
+            "text": "二、结果",
+            "page": 4,
+            "pageEnd": 4,
+            "sourceIDs": [
+              "g16"
+            ],
+            "metadata": {
+              "cross_page_merged": false
+            },
+            "qualityFlags": []
+          },
+          {
+            "type": "paragraph",
+            "label": "text",
+            "markdown": "Keywords: alpha, beta",
+            "text": "Keywords: alpha, beta",
+            "page": 4,
+            "pageEnd": 4,
+            "sourceIDs": [
+              "g17"
+            ],
+            "metadata": {
+              "cross_page_merged": false
+            },
+            "qualityFlags": [
+              "keyword_line",
+              "short_fragment"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "label": "text",
+            "markdown": "Authors: Alice, Bob",
+            "text": "Authors: Alice, Bob",
+            "page": 4,
+            "pageEnd": 4,
+            "sourceIDs": [
+              "g18"
+            ],
+            "metadata": {
+              "cross_page_merged": false
+            },
+            "qualityFlags": [
+              "author_line",
+              "short_fragment"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "label": "text",
+            "markdown": "doi:10.1000/example",
+            "text": "doi:10.1000/example",
+            "page": 4,
+            "pageEnd": 4,
+            "sourceIDs": [
+              "g19"
+            ],
+            "metadata": {
+              "cross_page_merged": false
+            },
+            "qualityFlags": [
+              "bibliographic_boilerplate",
+              "boilerplate",
+              "header",
+              "short_fragment"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "label": "text",
+            "markdown": "??? ?? �",
+            "text": "??? ?? �",
+            "page": 4,
+            "pageEnd": 4,
+            "sourceIDs": [
+              "g20"
+            ],
+            "metadata": {
+              "cross_page_merged": false
+            },
+            "qualityFlags": [
+              "ocr_noise",
+              "short_fragment"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "label": "text",
+            "markdown": "&#65; &copy; &notit; &#x80; &amp &#0; &NotEqualTilde; \\alpha",
+            "text": "A © ¬it; € & � ≂̸ \\alpha",
+            "page": 4,
+            "pageEnd": 4,
+            "sourceIDs": [
+              "g21"
+            ],
+            "metadata": {
+              "cross_page_merged": false
+            },
+            "qualityFlags": []
+          },
+          {
+            "type": "formula",
+            "label": "display_formula",
+            "markdown": "$$ y \\tag{2} $$",
+            "text": "$$ y \\tag{2} $$",
+            "page": 4,
+            "pageEnd": 4,
+            "sourceIDs": [
+              "g22"
+            ],
+            "metadata": {
+              "cross_page_merged": false
+            },
+            "qualityFlags": [
+              "formula_only",
+              "short_fragment"
+            ]
+          }
+        ],
+        "markdown": "<!-- page 1; width=600; height=800 -->\n\n<!-- page=1 label=doc_title block_id=0 global_block_id=g0 order=0 bbox=[10, 0, 500, 8] -->\n# 中文合成论文\n\n<!-- page=1 label=abstract block_id=2 global_block_id=g2 order=2 bbox=[10, 20, 500, 28] -->\n这是跨页摘要的前半部分，后半部分。\n\n<!-- page 2; width=600; height=800 -->\n\n<!-- page=2 label=paragraph_title block_id=4 global_block_id=g4 order=4 bbox=[10, 40, 500, 48] -->\n## 一、方法\n\n<!-- page=2 label=text block_id=5 global_block_id=g5 order=5 bbox=[10, 50, 500, 58] -->\nThis paragraph continues across physical pages without a final stop.\n\n<!-- page 3; width=600; height=800 -->\n\n<!-- page=3 label=paragraph_title block_id=8 global_block_id=g8 order=8 bbox=[10, 80, 500, 88] -->\n### Details\n\n<!-- page=3 label=display_formula block_id=9 global_block_id=g9 order=9 bbox=[10, 90, 500, 98] -->\n$$ x + y = z \\tag*{(1)}$$\n\n<!-- page=3 label=table block_id=11 global_block_id=g11 order=11 bbox=[10, 110, 500, 118] -->\n<table border=1 style='margin: auto; word-wrap: break-word;'><tr><th colspan=\"2\">A &amp; B</th></tr><tr><td rowspan=\"2\">C</td><td>D</td></tr></table>\n\n<!-- page=3 label=figure_title block_id=12 global_block_id=g12 order=12 bbox=[10, 120, 500, 128] -->\n<div style=\"text-align: center;\">Figure &lt;1&gt; &amp; values</div>\n\n<!-- page=3 label=footnote block_id=13 global_block_id=g13 order=13 bbox=[10, 130, 500, 138] -->\n> Footnote text with source details.\n\n<!-- page=3 label=reference_content block_id=14 global_block_id=g14 order=14 bbox=[10, 140, 500, 148] -->\nSmith et al.\n\n<!-- page 4; width=600; height=800 -->\n\n<!-- page=4 label=reference_content block_id=15 global_block_id=g15 order=15 bbox=[10, 150, 500, 158] -->\nA reference continued on a later page.\n\n<!-- page=4 label=paragraph_title block_id=16 global_block_id=g16 order=16 bbox=[10, 160, 500, 168] -->\n## 二、结果\n\n<!-- page=4 label=text block_id=17 global_block_id=g17 order=17 bbox=[10, 170, 500, 178] -->\nKeywords: alpha, beta\n\n<!-- page=4 label=text block_id=18 global_block_id=g18 order=18 bbox=[10, 180, 500, 188] -->\nAuthors: Alice, Bob\n\n<!-- page=4 label=text block_id=19 global_block_id=g19 order=19 bbox=[10, 190, 500, 198] -->\ndoi:10.1000/example\n\n<!-- page=4 label=text block_id=20 global_block_id=g20 order=20 bbox=[10, 200, 500, 208] -->\n??? ?? �\n\n<!-- page=4 label=text block_id=21 global_block_id=g21 order=21 bbox=[10, 210, 500, 218] -->\n&#65; &copy; &notit; &#x80; &amp &#0; &NotEqualTilde; \\alpha\n\n<!-- page=4 label=display_formula block_id=22 global_block_id=g22 order=22 bbox=[10, 220, 500, 228] -->\n$$ y \\tag{2} $$\n",
+        "detectedMetadata": {
+          "title": "中文合成论文",
+          "abstract": "这是跨页摘要的前半部分，\n后半部分。",
+          "language": "zh-CN"
+        }
+      }
+    },
+    {
+      "pages": [
+        {
+          "prunedResult": {
+            "width": 600,
+            "height": 800,
+            "model_settings": {
+              "use_layout_detection": true
+            },
+            "parsing_res_list": [
+              {
+                "block_label": "text",
+                "block_content": "A complete sentence.",
+                "block_id": 1,
+                "global_block_id": "g1",
+                "block_order": 1,
+                "block_bbox": [
+                  10,
+                  10,
+                  500,
+                  18
+                ]
+              }
+            ]
+          },
+          "markdown": {
+            "images": {}
+          }
+        },
+        {
+          "prunedResult": {
+            "width": 600,
+            "height": 800,
+            "model_settings": {
+              "use_layout_detection": true
+            },
+            "parsing_res_list": [
+              {
+                "block_label": "text",
+                "block_content": "No merge after full stop",
+                "block_id": 2,
+                "global_block_id": "g2",
+                "block_order": 2,
+                "block_bbox": [
+                  10,
+                  20,
+                  500,
+                  28
+                ]
+              },
+              {
+                "block_label": "image",
+                "block_content": "![Local](images/a.png)",
+                "block_id": 3,
+                "global_block_id": "g3",
+                "block_order": 3,
+                "block_bbox": [
+                  10,
+                  30,
+                  500,
+                  38
+                ]
+              }
+            ]
+          },
+          "markdown": {
+            "images": {}
+          }
+        }
+      ],
+      "expected": {
+        "blocks": [
+          {
+            "type": "paragraph",
+            "label": "text",
+            "markdown": "A complete sentence.",
+            "text": "A complete sentence.",
+            "page": 1,
+            "pageEnd": 1,
+            "sourceIDs": [
+              "g1"
+            ],
+            "metadata": {
+              "cross_page_merged": false
+            },
+            "qualityFlags": [
+              "short_fragment"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "label": "text",
+            "markdown": "No merge after full stop",
+            "text": "No merge after full stop",
+            "page": 2,
+            "pageEnd": 2,
+            "sourceIDs": [
+              "g2"
+            ],
+            "metadata": {
+              "cross_page_merged": false
+            },
+            "qualityFlags": []
+          },
+          {
+            "type": "image",
+            "label": "image",
+            "markdown": "![Local](images/a.png)",
+            "text": "![Local](images/a.png)",
+            "page": 2,
+            "pageEnd": 2,
+            "sourceIDs": [
+              "g3"
+            ],
+            "metadata": {
+              "cross_page_merged": false
+            },
+            "qualityFlags": [
+              "short_fragment"
+            ]
+          }
+        ],
+        "markdown": "<!-- page 1; width=600; height=800 -->\n\n<!-- page=1 label=text block_id=1 global_block_id=g1 order=1 bbox=[10, 10, 500, 18] -->\nA complete sentence.\n\n<!-- page 2; width=600; height=800 -->\n\n<!-- page=2 label=text block_id=2 global_block_id=g2 order=2 bbox=[10, 20, 500, 28] -->\nNo merge after full stop\n\n<!-- page=2 label=image block_id=3 global_block_id=g3 order=3 bbox=[10, 30, 500, 38] -->\n![Local](images/a.png)\n",
+        "detectedMetadata": {
+          "title": null,
+          "abstract": null,
+          "language": null
+        }
+      }
+    },
+    {
+      "pages": [
+        {
+          "prunedResult": {
+            "width": 600,
+            "height": 800,
+            "model_settings": {
+              "use_layout_detection": true
+            },
+            "parsing_res_list": [
+              {
+                "block_label": "text",
+                "block_content": "Text must stop at a boundary",
+                "block_id": 1,
+                "global_block_id": "g1",
+                "block_order": 1,
+                "block_bbox": [
+                  10,
+                  10,
+                  500,
+                  18
+                ]
+              }
+            ]
+          },
+          "markdown": {
+            "images": {}
+          }
+        },
+        {
+          "prunedResult": {
+            "width": 600,
+            "height": 800,
+            "model_settings": {
+              "use_layout_detection": true
+            },
+            "parsing_res_list": [
+              {
+                "block_label": "paragraph_title",
+                "block_content": "1. New section",
+                "block_id": 2,
+                "global_block_id": "g2",
+                "block_order": 2,
+                "block_bbox": [
+                  10,
+                  20,
+                  500,
+                  28
+                ]
+              },
+              {
+                "block_label": "text",
+                "block_content": "New body.",
+                "block_id": 3,
+                "global_block_id": "g3",
+                "block_order": 3,
+                "block_bbox": [
+                  10,
+                  30,
+                  500,
+                  38
+                ]
+              }
+            ]
+          },
+          "markdown": {
+            "images": {}
+          }
+        }
+      ],
+      "expected": {
+        "blocks": [
+          {
+            "type": "paragraph",
+            "label": "text",
+            "markdown": "Text must stop at a boundary",
+            "text": "Text must stop at a boundary",
+            "page": 1,
+            "pageEnd": 1,
+            "sourceIDs": [
+              "g1"
+            ],
+            "metadata": {
+              "cross_page_merged": false
+            },
+            "qualityFlags": []
+          },
+          {
+            "type": "heading",
+            "label": "paragraph_title",
+            "markdown": "### 1. New section",
+            "text": "1. New section",
+            "page": 2,
+            "pageEnd": 2,
+            "sourceIDs": [
+              "g2"
+            ],
+            "metadata": {
+              "cross_page_merged": false
+            },
+            "qualityFlags": []
+          },
+          {
+            "type": "paragraph",
+            "label": "text",
+            "markdown": "New body.",
+            "text": "New body.",
+            "page": 2,
+            "pageEnd": 2,
+            "sourceIDs": [
+              "g3"
+            ],
+            "metadata": {
+              "cross_page_merged": false
+            },
+            "qualityFlags": [
+              "short_fragment"
+            ]
+          }
+        ],
+        "markdown": "<!-- page 1; width=600; height=800 -->\n\n<!-- page=1 label=text block_id=1 global_block_id=g1 order=1 bbox=[10, 10, 500, 18] -->\nText must stop at a boundary\n\n<!-- page 2; width=600; height=800 -->\n\n<!-- page=2 label=paragraph_title block_id=2 global_block_id=g2 order=2 bbox=[10, 20, 500, 28] -->\n### 1. New section\n\n<!-- page=2 label=text block_id=3 global_block_id=g3 order=3 bbox=[10, 30, 500, 38] -->\nNew body.\n",
+        "detectedMetadata": {
+          "title": null,
+          "abstract": null,
+          "language": null
+        }
+      }
+    },
+    {
+      "pages": [
+        {
+          "prunedResult": {
+            "width": 600,
+            "height": 800,
+            "model_settings": {
+              "use_layout_detection": true
+            },
+            "parsing_res_list": [
+              {
+                "block_label": "text",
+                "block_content": "Text before missing pages",
+                "block_id": 1,
+                "global_block_id": "g1",
+                "block_order": 1,
+                "block_bbox": [
+                  10,
+                  10,
+                  500,
+                  18
+                ]
+              }
+            ]
+          },
+          "markdown": {
+            "images": {}
+          }
+        },
+        {
+          "prunedResult": {
+            "width": 600,
+            "height": 800,
+            "model_settings": {
+              "use_layout_detection": true
+            },
+            "parsing_res_list": [
+              {
+                "block_label": "text",
+                "block_content": "Text after missing pages.",
+                "block_id": 2,
+                "global_block_id": "g2",
+                "block_order": 2,
+                "block_bbox": [
+                  10,
+                  20,
+                  500,
+                  28
+                ]
+              }
+            ]
+          },
+          "markdown": {
+            "images": {}
+          },
+          "_parse_page_number": 4
+        }
+      ],
+      "expected": {
+        "blocks": [
+          {
+            "type": "paragraph",
+            "label": "text",
+            "markdown": "Text before missing pages",
+            "text": "Text before missing pages",
+            "page": 1,
+            "pageEnd": 1,
+            "sourceIDs": [
+              "g1"
+            ],
+            "metadata": {
+              "cross_page_merged": false
+            },
+            "qualityFlags": []
+          },
+          {
+            "type": "paragraph",
+            "label": "text",
+            "markdown": "Text after missing pages.",
+            "text": "Text after missing pages.",
+            "page": 4,
+            "pageEnd": 4,
+            "sourceIDs": [
+              "g2"
+            ],
+            "metadata": {
+              "cross_page_merged": false
+            },
+            "qualityFlags": []
+          }
+        ],
+        "markdown": "<!-- page 1; width=600; height=800 -->\n\n<!-- page=1 label=text block_id=1 global_block_id=g1 order=1 bbox=[10, 10, 500, 18] -->\nText before missing pages\n\n<!-- page 4; width=600; height=800 -->\n\n<!-- page=4 label=text block_id=2 global_block_id=g2 order=2 bbox=[10, 20, 500, 28] -->\nText after missing pages.\n",
+        "detectedMetadata": {
+          "title": null,
+          "abstract": null,
+          "language": null
+        }
+      }
+    }
+  ]
+}

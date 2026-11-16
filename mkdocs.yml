@@ -1,0 +1,272 @@
+site_name: Zotero Knowledge MCP
+site_description: User documentation for the Zotero Knowledge MCP plugin
+site_url: https://lianghx123.github.io/zoteroknowledgemcp/
+repo_url: https://github.com/lianghx123/zoteroknowledgemcp
+repo_name: lianghx123/zoteroknowledgemcp
+edit_uri: edit/main/docs/user/
+docs_dir: docs/user
+site_dir: .scaffold/docs-site
+extra_css:
+  - assets/brand.css
+theme:
+  name: material
+  custom_dir: docs/theme
+  language: en
+  font: false
+  logo: assets/knowledge.svg
+  favicon: assets/knowledge.svg
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+    - scheme: slate
+      primary: custom
+      accent: custom
+plugins:
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: false
+      reconfigure_search: false
+      languages:
+        - locale: en-US
+          name: English
+          default: true
+          theme:
+            language: en
+            palette:
+              - scheme: default
+                primary: custom
+                accent: custom
+                toggle:
+                  icon: material/brightness-4
+                  name: Switch to dark mode
+              - scheme: slate
+                primary: custom
+                accent: custom
+                toggle:
+                  icon: material/brightness-7
+                  name: Switch to light mode
+        - locale: zh-CN
+          name: 简体中文
+          theme:
+            language: zh
+            palette:
+              - scheme: default
+                primary: custom
+                accent: custom
+                toggle:
+                  icon: material/brightness-4
+                  name: 切换至深色模式
+              - scheme: slate
+                primary: custom
+                accent: custom
+                toggle:
+                  icon: material/brightness-7
+                  name: 切换至浅色模式
+          site_description: Zotero Knowledge MCP 插件用户文档
+          nav_translations:
+            Welcome: 欢迎
+            Getting started: 快速入门
+            Install and upgrade: 安装与升级
+            First document: 处理第一篇文献
+            Configure services: 配置服务
+            Using the plugin: 使用插件
+            Knowledge libraries: 知识库
+            Search: 检索
+            Read and edit: 阅读与编辑
+            Connect an AI client: 连接 AI 客户端
+            Help: 帮助
+            Data and privacy: 数据与隐私
+            Troubleshooting: 故障排查
+            Support and compatibility: 支持与兼容性
+        - locale: zh-TW
+          name: 繁體中文
+          theme:
+            language: zh-TW
+            palette:
+              - scheme: default
+                primary: custom
+                accent: custom
+                toggle:
+                  icon: material/brightness-4
+                  name: 切換至深色模式
+              - scheme: slate
+                primary: custom
+                accent: custom
+                toggle:
+                  icon: material/brightness-7
+                  name: 切換至淺色模式
+          site_description: Zotero Knowledge MCP 外掛使用者文件
+          nav_translations:
+            Welcome: 歡迎
+            Getting started: 快速入門
+            Install and upgrade: 安裝與升級
+            First document: 處理第一篇文獻
+            Configure services: 設定服務
+            Using the plugin: 使用外掛
+            Knowledge libraries: 知識庫
+            Search: 檢索
+            Read and edit: 閱讀與編輯
+            Connect an AI client: 連接 AI 用戶端
+            Help: 說明
+            Data and privacy: 資料與隱私
+            Troubleshooting: 疑難排解
+            Support and compatibility: 支援與相容性
+        - locale: de
+          name: Deutsch
+          theme:
+            language: de
+            palette:
+              - scheme: default
+                primary: custom
+                accent: custom
+                toggle:
+                  icon: material/brightness-4
+                  name: Zum dunklen Modus wechseln
+              - scheme: slate
+                primary: custom
+                accent: custom
+                toggle:
+                  icon: material/brightness-7
+                  name: Zum hellen Modus wechseln
+          site_description: Benutzerhandbuch für das Zotero-Knowledge-MCP-Plugin
+          nav_translations:
+            Welcome: Willkommen
+            Getting started: Erste Schritte
+            Install and upgrade: Installation und Upgrade
+            First document: Das erste Dokument
+            Configure services: Dienste konfigurieren
+            Using the plugin: Plugin verwenden
+            Knowledge libraries: Wissensbibliotheken
+            Search: Suche
+            Read and edit: Lesen und bearbeiten
+            Connect an AI client: KI-Client verbinden
+            Help: Hilfe
+            Data and privacy: Daten und Datenschutz
+            Troubleshooting: Fehlerbehebung
+            Support and compatibility: Support und Kompatibilität
+        - locale: fr-FR
+          name: Français
+          theme:
+            language: fr
+            palette:
+              - scheme: default
+                primary: custom
+                accent: custom
+                toggle:
+                  icon: material/brightness-4
+                  name: Passer au thème sombre
+              - scheme: slate
+                primary: custom
+                accent: custom
+                toggle:
+                  icon: material/brightness-7
+                  name: Passer au thème clair
+          site_description: Guide utilisateur du module Zotero Knowledge MCP
+          nav_translations:
+            Welcome: Bienvenue
+            Getting started: Premiers pas
+            Install and upgrade: Installation et mise à niveau
+            First document: Premier document
+            Configure services: Configurer les services
+            Using the plugin: Utiliser le module
+            Knowledge libraries: Bibliothèques de connaissances
+            Search: Recherche
+            Read and edit: Lecture et modification
+            Connect an AI client: Connecter un client IA
+            Help: Aide
+            Data and privacy: Données et confidentialité
+            Troubleshooting: Dépannage
+            Support and compatibility: Assistance et compatibilité
+        - locale: es-ES
+          name: Español
+          theme:
+            language: es
+            palette:
+              - scheme: default
+                primary: custom
+                accent: custom
+                toggle:
+                  icon: material/brightness-4
+                  name: Cambiar al modo oscuro
+              - scheme: slate
+                primary: custom
+                accent: custom
+                toggle:
+                  icon: material/brightness-7
+                  name: Cambiar al modo claro
+          site_description: Guía de usuario del complemento Zotero Knowledge MCP
+          nav_translations:
+            Welcome: Bienvenida
+            Getting started: Primeros pasos
+            Install and upgrade: Instalación y actualización
+            First document: Primer documento
+            Configure services: Configurar servicios
+            Using the plugin: Usar el complemento
+            Knowledge libraries: Bibliotecas de conocimiento
+            Search: Búsqueda
+            Read and edit: Lectura y edición
+            Connect an AI client: Conectar un cliente de IA
+            Help: Ayuda
+            Data and privacy: Datos y privacidad
+            Troubleshooting: Solución de problemas
+            Support and compatibility: Asistencia y compatibilidad
+        - locale: ja-JP
+          name: 日本語
+          theme:
+            language: ja
+            palette:
+              - scheme: default
+                primary: custom
+                accent: custom
+                toggle:
+                  icon: material/brightness-4
+                  name: ダークモードに切り替え
+              - scheme: slate
+                primary: custom
+                accent: custom
+                toggle:
+                  icon: material/brightness-7
+                  name: ライトモードに切り替え
+          site_description: Zotero Knowledge MCP プラグインのユーザーガイド
+          nav_translations:
+            Welcome: ようこそ
+            Getting started: はじめに
+            Install and upgrade: インストールと更新
+            First document: 最初の文献を処理
+            Configure services: サービスの設定
+            Using the plugin: プラグインの使い方
+            Knowledge libraries: ナレッジライブラリ
+            Search: 検索
+            Read and edit: 閲覧と編集
+            Connect an AI client: AI クライアントの接続
+            Help: ヘルプ
+            Data and privacy: データとプライバシー
+            Troubleshooting: トラブルシューティング
+            Support and compatibility: サポートと互換性
+  - search:
+      lang: [en, de, fr, es, ja, zh]
+markdown_extensions:
+  - attr_list
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.highlight
+nav:
+  - Welcome: index.md
+  - Getting started:
+      - Install and upgrade: installation.md
+      - First document: quick-start.md
+      - Configure services: configuration.md
+  - Using the plugin:
+      - Knowledge libraries: knowledge-libraries.md
+      - Search: search.md
+      - Read and edit: reader.md
+      - Connect an AI client: mcp.md
+  - Help:
+      - Data and privacy: privacy.md
+      - Troubleshooting: troubleshooting.md
+      - Support and compatibility: support.md

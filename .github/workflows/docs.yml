@@ -1,0 +1,72 @@
+name: User documentation
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - docs/user/**
+      - docs/theme/**
+      - docs/requirements.txt
+      - mkdocs.yml
+      - .github/workflows/docs.yml
+      - scripts/check-docs-locales.py
+      - addon/locale/**
+  pull_request:
+    paths:
+      - docs/user/**
+      - docs/theme/**
+      - docs/requirements.txt
+      - mkdocs.yml
+      - .github/workflows/docs.yml
+      - scripts/check-docs-locales.py
+      - addon/locale/**
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: docs-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: docs/requirements.txt
+      - run: python -m pip install -r docs/requirements.txt
+      - run: python scripts/check-docs-locales.py
+      - run: python -m mkdocs build --strict
+      - run: python scripts/check-docs-locales.py --site-dir .scaffold/docs-site
+      - uses: actions/upload-artifact@v4
+        with:
+          name: user-documentation
+          path: .scaffold/docs-site
+          if-no-files-found: error
+      - uses: actions/upload-pages-artifact@v3
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && vars.PUBLISH_DOCS == 'true'
+        with:
+          path: .scaffold/docs-site
+
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && vars.PUBLISH_DOCS == 'true'
+    needs: build
+    runs-on: ubuntu-latest
+    concurrency:
+      group: github-pages
+      cancel-in-progress: false
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+      - uses: actions/deploy-pages@v4
+        id: deployment

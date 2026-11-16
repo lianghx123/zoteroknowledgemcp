@@ -1,0 +1,97 @@
+name: Release plugin
+
+on:
+  workflow_dispatch:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.23.1
+          cache: npm
+      - run: npm ci --include=optional
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run database:check
+      - name: Validate package and prepare immutable assets
+        shell: bash
+        run: |
+          if [[ "$RELEASE_EVENT" == "workflow_dispatch" ]]; then
+            RELEASE_TAG="v$(node -p 'JSON.parse(require("fs").readFileSync("package.json")).version')"
+            npm run release:prepare -- --tag "$RELEASE_TAG" --require-clean --rehearsal
+          else
+            npm run release:prepare -- --tag "$RELEASE_TAG" --require-clean
+          fi
+        env:
+          RELEASE_TAG: ${{ github.ref_name }}
+          RELEASE_EVENT: ${{ github.event_name }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: release-assets
+          path: .scaffold/release/
+          if-no-files-found: error
+
+  publish:
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
+    needs: validate
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      RELEASE_TAG: ${{ github.ref_name }}
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: release-assets
+          path: release
+      - name: Create draft without replacing existing releases
+        shell: bash
+        run: |
+          set -euo pipefail
+          # Listing must succeed; authentication/network errors cannot mean "absent".
+          gh api --paginate "repos/$GH_REPO/releases?per_page=100" --jq '.[].tag_name' > existing-tags.txt
+          if grep -Fxq -- "$RELEASE_TAG" existing-tags.txt; then
+            echo "Release already exists; inspect it and recover manually."
+            exit 1
+          fi
+          flags=(--draft --verify-tag --latest=false)
+          if [[ "$RELEASE_TAG" == *-* ]]; then flags+=(--prerelease); fi
+          gh release create "$RELEASE_TAG" release/zotero-knowledge-mcp.xpi release/SHA256SUMS \
+            --title "Zotero Knowledge MCP $RELEASE_TAG" --notes-file release/notes.md "${flags[@]}"
+      - name: Verify uploaded bytes before publishing
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh release download "$RELEASE_TAG" --dir downloaded --pattern zotero-knowledge-mcp.xpi --pattern SHA256SUMS
+          cmp release/SHA256SUMS downloaded/SHA256SUMS
+          cd downloaded
+          sha256sum --check SHA256SUMS
+      - name: Publish verified release
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ "$RELEASE_TAG" == *-* ]]; then
+            gh release edit "$RELEASE_TAG" --draft=false --prerelease --latest=false
+          else
+            gh release edit "$RELEASE_TAG" --draft=false --prerelease=false --latest
+          fi
+
+  refresh-updates:
+    needs: publish
+    permissions:
+      contents: write
+    uses: ./.github/workflows/updates.yml

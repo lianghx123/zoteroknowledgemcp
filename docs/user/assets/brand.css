@@ -1,0 +1,40 @@
+/* Match the plugin's knowledge-library mark in both color schemes. */
+[data-md-color-primary="custom"] {
+  --md-primary-fg-color: #6554c0;
+  --md-primary-fg-color--light: #8172d2;
+  --md-primary-fg-color--dark: #514099;
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: #ffffffb3;
+  --md-accent-fg-color: #514099;
+  --md-accent-fg-color--transparent: #6554c01f;
+  --md-accent-bg-color: #ffffff;
+  --md-accent-bg-color--light: #ffffffb3;
+  --km-header-bg-color: #6554c0;
+}
+
+[data-md-color-scheme="slate"][data-md-color-primary="custom"] {
+  --md-hue: 250;
+  --md-primary-fg-color: #b8a8ff;
+  --md-primary-fg-color--light: #d5caff;
+  --md-primary-fg-color--dark: #9b85ef;
+  --md-primary-bg-color: #211a3c;
+  --md-primary-bg-color--light: #211a3cb3;
+  --md-accent-fg-color: #d5caff;
+  --md-accent-fg-color--transparent: #b8a8ff1f;
+  --md-accent-bg-color: #211a3c;
+  --md-accent-bg-color--light: #211a3cb3;
+  --km-header-bg-color: #3b306c;
+}
+
+[data-md-color-primary="custom"] .md-header,
+[data-md-color-primary="custom"] .md-tabs {
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: #ffffffb3;
+  background-color: var(--km-header-bg-color);
+  color: #ffffff;
+}
+
+/* Keep the mark legible on the purple header; the favicon stays purple. */
+.md-header .md-logo img {
+  filter: brightness(0) invert(1);
+}

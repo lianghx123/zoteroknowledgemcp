@@ -1,0 +1,7 @@
+node_modules/
+.scaffold/
+.env
+*.log
+test_documents/
+/experiments/mineru/
+test-embedding/

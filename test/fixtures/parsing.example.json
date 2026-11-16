@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "enabled": false,
+  "activeProfile": "paddleocr",
+  "profiles": {
+    "paddleocr": {
+      "api": "https://paddleocr.aistudio-app.com/api/v2/ocr/jobs",
+      "model": "PaddleOCR-VL-1.6",
+      "key": "",
+      "options": {
+        "markdownIgnoreLabels": [
+          "header",
+          "header_image",
+          "footer",
+          "footer_image",
+          "number",
+          "footnote",
+          "aside_text"
+        ],
+        "useDocOrientationClassify": false,
+        "useDocUnwarping": false,
+        "useLayoutDetection": true,
+        "useChartRecognition": false,
+        "useSealRecognition": false,
+        "useOcrForImageBlock": false,
+        "mergeTables": true,
+        "relevelTitles": true,
+        "layoutShapeMode": "auto",
+        "promptLabel": "ocr",
+        "repetitionPenalty": 1,
+        "temperature": 0,
+        "topP": 1,
+        "minPixels": 147384,
+        "maxPixels": 2822400,
+        "layoutNms": true,
+        "restructurePages": true
+      }
+    },
+    "mineru": {
+      "provider": "mineru",
+      "api": "https://mineru.net/api/v4",
+      "model": "vlm",
+      "key": "",
+      "options": {
+        "isOcr": true,
+        "enableFormula": true,
+        "enableTable": true,
+        "language": "ch"
+      }
+    }
+  },
+  "concurrency": 2,
+  "remoteConcurrency": 2,
+  "pollIntervalMs": 5000,
+  "requestTimeoutMs": 60000,
+  "jobTimeoutMs": 3600000,
+  "maxFileBytes": 104857600,
+  "maxResultBytes": 104857600,
+  "maxFailures": 3
+}

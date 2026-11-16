@@ -1,0 +1,63 @@
+.km-retrieval-panel {
+  display: block;
+  align-self: flex-start;
+  width: 100%;
+  min-width: 0;
+  max-height: none;
+  overflow: visible;
+  box-sizing: border-box;
+  padding: 8px 14px;
+  font-size: inherit;
+  line-height: 1.4;
+  white-space: normal;
+  user-select: text;
+  cursor: text;
+}
+.km-retrieval-panel p { margin: 3px 0; }
+.km-evidence-warning { color: var(--fill-secondary, GrayText); font-size: 12px; }
+.km-evidence-card { padding: 4px 0; margin: 0; }
+.km-evidence-card + .km-evidence-card { border-block-start: 1px solid var(--fill-quinary, #8884); }
+.km-evidence-card summary { cursor: pointer; font-weight: normal; }
+.km-evidence-card blockquote { margin: 4px 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+.km-evidence-card mark { color: inherit; background: #efbf4770; border-radius: 2px; }
+.km-evidence-location { color: var(--fill-secondary, GrayText); font-size: 12px; }
+.km-evidence-source,
+.km-evidence-source:visited { color: var(--accent-blue, LinkText); text-decoration: underline; cursor: pointer; }
+.km-evidence-source:hover { text-decoration-thickness: 2px; }
+.km-evidence-source:focus-visible { outline: 1px solid currentColor; outline-offset: 2px; }
+.km-evidence-source[aria-disabled="true"] { opacity: .6; }
+.km-evidence-actions { display: flex; gap: 6px; align-items: center; }
+.km-retrieval-panel button { cursor: pointer; padding: 1px 5px; font: inherit; }
+.km-inline-result { align-items: flex-start !important; }
+.km-inline-result > .cell {
+  align-self: flex-start;
+  margin-block-start: calc(var(--km-note-height, 0px) + 3px);
+  height: calc(var(--km-base-height, 28px) - 6px);
+}
+.km-relevance-note {
+  position: absolute;
+  inset-inline: 0;
+  top: 0;
+  height: 24px;
+  padding: 3px 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: var(--material-background, Canvas);
+  color: var(--fill-secondary, GrayText);
+  border-block-start: 1px solid var(--fill-quinary, #8884);
+  font-size: 12px;
+  font-weight: normal;
+}
+.km-inline-evidence {
+  position: absolute;
+  inset-inline: 0;
+  top: calc(var(--km-note-height, 0px) + var(--km-base-height, 28px));
+  overflow: auto;
+  overscroll-behavior: contain;
+  box-sizing: border-box;
+  border-block: 1px solid var(--fill-quinary, #8884);
+  background: var(--material-background, Canvas);
+  color: var(--fill-primary, CanvasText);
+}

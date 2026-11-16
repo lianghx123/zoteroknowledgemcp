@@ -1,0 +1,22 @@
+{
+  "hashFormat": "sha256-lf-text-v1",
+  "version": "2.26.5",
+  "vectorArenaMiB": 32,
+  "graphArena": "upstream",
+  "outputChunkMiB": 4,
+  "metric": "cosine",
+  "simd": true,
+  "openmp": false,
+  "numkong": false,
+  "maxWasmMemory": 2147483648,
+  "hashes": {
+    "vendor/usearch/wrapper.cpp": "df89e9756ed2a4645706e6f60f04b1f1c3a8e3c275cc03ee04f35b4f95ef7112",
+    "vendor/usearch/source/c/lib.cpp": "2f5478c0c315bcd583dd1d49ae43b86d2d1e7c127eeada717055b512a10174f7",
+    "vendor/usearch/source/c/usearch.h": "6b5a28b92d2eeb9dbb9dc63933f89606624301bfc8e81c6037f4f2eebcfe1027",
+    "vendor/usearch/source/include/usearch/index.hpp": "b806b3c16dbe90b7e757d5c5bfbebf63cf347ad78ea9b34ff157b8c69cd15e82",
+    "vendor/usearch/source/include/usearch/index_dense.hpp": "6ca9e8b8ec3ca9111acb55556d808bdf02c35ccf7de1eb1ba2d745a8a4e3520b",
+    "vendor/usearch/source/include/usearch/index_plugins.hpp": "e74c9b5a50bc5a1278e5350c7a262ca20c543f3f874adcdfd5f18885f641017b",
+    "addon/content/vector/usearch.mjs": "3bb720b19bb75c788ede905df9f2957319f0f86597dfa2cabf2f39ed242d9b4c",
+    "addon/content/vector/usearch.wasm": "749b6c5875b94b687107309f11a615a1adc2a5d3b09bf07e2c5d2ba380270c5e"
+  }
+}

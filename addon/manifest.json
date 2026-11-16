@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Zotero Knowledge MCP",
+  "author": "lianghx123",
+  "homepage_url": "https://github.com/lianghx123/zoteroknowledgemcp",
+  "version": "0.2.0-preview.1",
+  "icons": {
+    "48": "content/ui/knowledge.svg",
+    "96": "content/ui/knowledge.svg"
+  },
+  "description": "Vector-based Zotero knowledge base with structured literature access through MCP",
+  "applications": {
+    "zotero": {
+      "id": "zotero-knowledge-mcp@local.dev",
+      "strict_min_version": "10.0",
+      "strict_max_version": "10.0.*",
+      "update_url": "https://raw.githubusercontent.com/lianghx123/zoteroknowledgemcp/main/updates.json"
+    }
+  }
+}

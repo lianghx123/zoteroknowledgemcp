@@ -1,0 +1,158 @@
+.km-import-host-active { position: relative; }
+.km-import-host-active > :not(#km-import-tasks):not(#km-import-task-details) { visibility: hidden; pointer-events: none; }
+#km-import-tasks, #km-import-task-details.km-task-fallback {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  box-sizing: border-box;
+  min-width: 0;
+  min-height: 0;
+  font: inherit;
+  color: var(--fill-primary, light-dark(#222, #eee));
+  background: var(--material-background, light-dark(#fff, #252525));
+}
+#km-import-tasks[hidden], #km-import-task-details[hidden] { display: none; }
+#km-import-tasks { display: flex; flex-direction: column; overflow: hidden; }
+#km-import-task-details { min-width: 0; min-height: 0; overflow: auto; font: inherit; color: inherit; }
+.km-task-native-container { display: flex; flex: 1; min-width: 0; min-height: 0; overflow: hidden; }
+.km-task-native-container > .zotero-view-item-main { display: flex; flex-direction: column; flex: 1; min-width: 0; min-height: 0; }
+.km-task-section-body { padding: 4px 12px 12px; }
+.km-task-header-fallback { padding: 8px; min-height: 41px; box-sizing: border-box; font-weight: 600; line-height: 1.333; overflow-wrap: anywhere; border-bottom: 1px solid var(--fill-quinary, #80808030); }
+.km-task-pane-section collapsible-section[custom] > .head .title::before {
+  content: ""; display: inline-block; width: 16px; height: 16px; flex: 0 0 16px;
+  background: url("chrome://knowledgemcp/content/ui/knowledge.svg") no-repeat center / 16px 16px;
+  -moz-context-properties: fill, stroke; fill: currentColor; stroke: currentColor;
+}
+.km-import-tasks button, .km-import-task-details button, .km-import-tasks input { font: inherit; }
+.km-import-tasks button, .km-import-task-details button { color: inherit; }
+.km-import-tasks button:focus-visible, .km-import-task-details button:focus-visible, .km-tasks-search:focus-visible {
+  outline: 2px solid var(--color-accent, #0a64db);
+  outline-offset: -2px;
+}
+.km-tasks-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-sizing: border-box;
+  min-height: 41px;
+  padding: 4px 8px;
+  flex-shrink: 0;
+  border-bottom: 1px solid var(--fill-quinary, #80808030);
+  background: var(--material-toolbar, light-dark(#f8f8f8, #303030));
+  overflow-x: auto;
+}
+.km-tasks-filters { display: flex; align-items: center; gap: 2px; flex-shrink: 0; }
+.km-tasks-config { width: 28px; height: 28px; padding: 4px; border: 0; background: transparent; border-radius: 3px; }
+.km-tasks-config:hover { background: var(--fill-quinary, #80808018); }
+.km-settings-icon { display: inline-block; width: 16px; height: 16px; background: currentColor; mask: url("chrome://zotero/skin/20/universal/wrench-screwdriver.svg") center / contain no-repeat; }
+.km-task-context-menu { padding: 4px; background: var(--material-background, white); border: 1px solid GrayText; display: flex; flex-direction: column; }
+.km-task-context-menu button { text-align: start; padding: 5px 12px; }
+.km-tasks-config-notice { margin: 0; padding: 6px 10px; border-bottom: 1px solid var(--fill-quinary, #80808030); color: var(--fill-secondary, GrayText); }
+.km-tasks-filters button {
+  padding: 4px 7px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  white-space: nowrap;
+  background: transparent;
+}
+.km-tasks-filters button:hover { background: var(--fill-quinary, #80808018); }
+.km-tasks-filters button[aria-pressed="true"] {
+  border-color: var(--fill-quaternary, #80808040);
+  background: var(--fill-quinary, #80808020);
+}
+.km-task-count { margin-inline-start: 5px; color: var(--fill-secondary, GrayText); font-variant-numeric: tabular-nums; }
+.km-tasks-search {
+  margin-inline-start: auto;
+  width: 185px;
+  min-width: 105px;
+  box-sizing: border-box;
+  padding: 4px 8px;
+  border: 1px solid var(--fill-quinary, #80808030);
+  border-radius: 3px;
+  background: var(--material-background, light-dark(#fff, #252525));
+  color: inherit;
+}
+.km-tasks-scroll { flex: 1; overflow: auto; min-height: 0; }
+.km-tasks-table { width: 100%; border-collapse: separate; border-spacing: 0; table-layout: fixed; font: inherit; }
+.km-tasks-table thead { position: sticky; top: 0; z-index: 1; }
+.km-tasks-table th {
+  position: relative;
+  height: 28px;
+  box-sizing: border-box;
+  padding: 3px 10px;
+  text-align: start;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 400;
+  border-bottom: 1px solid var(--fill-quinary, #80808030);
+  background: var(--material-background, light-dark(#fff, #252525));
+}
+.km-tasks-table th + th { border-inline-start: 1px solid var(--fill-quinary, #80808025); }
+.km-tasks-table th:first-child { padding-inline-start: 48px; }
+.km-task-column-resize { position: absolute; inset-inline-end: 0; top: 0; bottom: 0; width: 7px; cursor: col-resize; z-index: 2; touch-action: none; }
+.km-task-column-resize:hover, .km-task-column-resize:focus-visible { background: var(--fill-quaternary, #80808040); }
+.km-task-columns-resizing, .km-task-columns-resizing * { cursor: col-resize !important; user-select: none !important; }
+.km-tasks-table td { height: 28px; box-sizing: border-box; padding: 3px 10px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.km-tasks-table td:first-child { padding-inline-start: 8px; }
+.km-tasks-table tbody tr:nth-child(even) { background: var(--fill-senary, light-dark(#f5f5f5, #ffffff06)); }
+.km-tasks-table tbody tr.selected { background: var(--fill-quaternary, light-dark(#ddd, #555)); }
+.km-tasks-table:focus-within tbody tr.selected { background: var(--color-accent, #0a64db); color: var(--color-accent-text, #fff); }
+.km-import-tasks .km-task-select { display: block; width: 100%; height: 22px; min-height: 0; margin: 0; padding: 0; border: 0; background: transparent; text-align: start; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; line-height: 22px; }
+.km-task-title-row { display: flex; align-items: center; min-width: 0; }
+.km-task-title-row.child { padding-inline-start: 18px; }
+.km-import-tasks .km-task-toggle, .km-task-toggle-space { width: 18px; min-width: 18px; flex: 0 0 18px; }
+.km-import-tasks .km-task-toggle { min-height: 0; height: 22px; padding: 0; margin: 0; border: 0; background: transparent; line-height: 22px; }
+.km-task-title-row .km-task-select { min-width: 0; }
+.km-task-select .icon { display: inline-block; width: 16px; height: 16px; margin-inline-end: 6px; vertical-align: -3px; }
+.km-task-status { font: inherit; }
+.km-task-processing { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.km-task-processing > .km-task-status { flex: 0 1 auto; overflow: hidden; text-overflow: ellipsis; }
+.km-task-processing > .km-task-progress { flex: 0 0 auto; }
+.km-task-processing .km-task-progress progress { flex-basis: 40px; width: 40px; }
+.km-task-status.failed { color: light-dark(#b0352b, #f09c92); }
+.km-task-status.partial { color: light-dark(#8b651d, #dbbb7c); }
+.km-tasks-table:focus-within tr.selected .km-task-status { color: inherit; }
+.km-task-progress { display: flex; align-items: center; gap: 7px; min-width: 0; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.km-task-progress progress { flex: 0 1 70px; width: 70px; min-width: 20px; height: 6px; accent-color: var(--color-accent, #0a64db); }
+.km-task-progress span { overflow: hidden; text-overflow: ellipsis; }
+.km-import-task-details h2 {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  min-height: 41px;
+  margin: 0 -12px 12px;
+  padding: 4px 12px;
+  border-bottom: 1px solid var(--fill-quinary, #80808030);
+  font: inherit;
+  font-weight: 600;
+}
+.km-import-task-details h3 { margin: 10px 0 14px; font-size: 1.05em; line-height: 1.5; overflow-wrap: anywhere; }
+.km-task-fields { display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: 8px 10px; margin: 14px 0; line-height: 1.5; }
+.km-task-fields dt { text-align: end; color: var(--fill-secondary, GrayText); }
+.km-task-fields dd { margin: 0; overflow-wrap: anywhere; user-select: text; }
+.km-task-steps { list-style: none; padding: 0; margin: 0; }
+.km-task-steps > li { display: block; padding: 6px 0; color: var(--fill-secondary, GrayText); }
+.km-import-task-details h3.km-task-stage-title { margin: 4px 0; font: inherit; line-height: 1.6; }
+.km-task-group-state { display: block; margin-inline-start: 24px; font-size: .92em; font-weight: 400; color: var(--fill-secondary, GrayText); }
+.km-task-substeps { list-style: none; padding: 6px 0 4px 24px; margin: 0; font-weight: 400; }
+.km-task-substeps li { display: flex; gap: 6px; align-items: baseline; padding: 4px 0; color: var(--fill-secondary, GrayText); }
+.km-task-substeps li.current { color: inherit; font-weight: 600; }
+.km-task-subnote { margin: 6px 0; font-weight: 400; line-height: 1.6; color: var(--fill-secondary, GrayText); }
+.km-task-completion { display: flex; align-items: center; gap: 6px; margin: 12px 0 0; font-weight: 600; }
+.km-task-stage > .km-task-progress, .km-task-stage > .km-task-subnote { margin-inline-start: 24px; }
+.km-task-stage > .km-task-progress { flex-wrap: wrap; white-space: normal; margin-block: 8px; }
+.km-task-step-marker { display: inline-block; text-align: center; width: 18px; flex: 0 0 18px; }
+.km-task-steps .done, .km-task-steps [aria-current="step"] { color: inherit; }
+.km-task-steps [aria-current="step"] { font-weight: 600; }
+.km-task-note { margin: 10px 0; padding: 10px 0; line-height: 1.6; color: var(--fill-secondary, GrayText); border-top: 1px solid var(--fill-quinary, #80808030); }
+.km-task-note.failed { color: light-dark(#a4382e, #efa699); }
+.km-task-actions { display: flex; gap: 8px; margin-top: 12px; }
+.km-task-actions button { padding: 4px 12px; }
+.km-tasks-empty { padding: 20px 10px; color: var(--fill-secondary, GrayText); text-align: center; }
+.icon.icon-km-import-tasks { display: inline-block; width: 16px; height: 16px; flex: 0 0 16px; background: light-dark(#7b65b3, #c4aaf0); mask: var(--km-import-tasks-icon) center / contain no-repeat; }
+@media (max-width: 1100px) {
+  .km-tasks-toolbar { gap: 4px; padding-inline: 4px; }
+  .km-tasks-search { width: 130px; }
+  .km-tasks-filters button { padding-inline: 5px; }
+}

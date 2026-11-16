@@ -1,0 +1,181 @@
+#km-settings {
+  --km-settings-label-width: 12rem;
+  max-width: 780px;
+  min-width: 0;
+  container-type: inline-size;
+}
+
+#km-settings .km-settings-navigation { position: sticky; inset-block-start: 0; z-index: 5; display: flex; flex-wrap: nowrap; gap: 20px; overflow-x: auto; margin-block: 0 20px; padding-block-start: 6px; border-bottom: 1px solid var(--fill-quaternary); background: var(--material-sidepane, light-dark(#f2f2f2, #252525)); }
+#km-settings .km-settings-navigation [role=tab] { appearance: none; flex: 0 0 auto; min-width: 0; margin: 0; padding: 10px 2px; border: 0; border-bottom: 2px solid transparent; border-radius: 0; background: transparent; box-shadow: none; color: var(--fill-secondary); white-space: nowrap; cursor: pointer; }
+#km-settings .km-settings-navigation [role=tab]:hover { color: var(--color-accent, #0a64db); background: transparent; }
+#km-settings .km-settings-navigation [role=tab][aria-selected=true] { color: var(--color-accent, #0a64db); border-bottom-color: currentColor; font-weight: 600; }
+#km-settings .km-settings-navigation [role=tab]:focus-visible { outline: 2px solid var(--color-accent, #0a64db); outline-offset: -3px; }
+#km-settings .km-settings-panel[hidden] { display: none; }
+#km-settings form, #km-settings .km-settings-panel { min-width: 0; }
+
+#km-settings fieldset {
+  min-width: 0;
+  margin: 0 0 24px;
+  padding: 16px 0 0;
+  border: 0;
+  border-top: 1px solid var(--fill-quaternary);
+}
+
+#km-settings legend { padding-inline: 0 12px; font-weight: 600; }
+#km-settings h2, #km-settings h3 { margin-block: 24px 12px; }
+#km-settings .km-settings-fields { display: grid; gap: 14px; }
+
+#km-settings .km-settings-field {
+  display: grid;
+  grid-template-columns: var(--km-settings-label-width) minmax(0, 1fr);
+  align-items: center;
+  gap: 6px 16px;
+  min-width: 0;
+}
+
+#km-settings .km-settings-field > :first-child { margin: 0; line-height: 1.5; }
+#km-settings .km-settings-field:has(textarea) { align-items: start; }
+#km-settings .km-settings-field:has(textarea) > label { padding-block-start: 6px; }
+#km-settings .km-settings-toggle { display: block; }
+
+#km-settings .km-settings-checkbox {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  width: fit-content;
+  max-width: 100%;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+#km-settings .km-settings-checkbox input[type=checkbox] {
+  flex: 0 0 auto;
+  margin: 0;
+  align-self: start;
+  margin-block-start: 3px;
+}
+
+#km-settings input, #km-settings select, #km-settings textarea, #km-settings button { font: inherit; color: inherit; }
+#km-settings input:not([type=checkbox]), #km-settings select, #km-settings textarea {
+  box-sizing: border-box;
+  justify-self: start;
+  max-width: 100%;
+  margin: 0;
+  padding: 6px 8px;
+  border-radius: 5px;
+}
+
+#km-settings input:not([type=checkbox]) { width: 20rem; }
+#km-settings input[type=number] { width: 8rem; appearance: textfield; -moz-appearance: textfield; text-align: start; }
+#km-settings input[type=number]::-webkit-inner-spin-button,
+#km-settings input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+#km-settings input[type=url], #km-settings input[id$=-endpoint] { width: 28rem; }
+#km-settings .km-settings-select { position: relative; display: inline-grid; justify-self: start; width: fit-content; max-width: 100%; min-width: 0; }
+#km-settings .km-settings-select::after {
+  content: "";
+  position: absolute;
+  inset-inline-end: 10px;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  transform: translateY(-50%);
+  background: currentColor;
+  mask: url("chrome://knowledgemcp/content/ui/chevron-down.svg") center / contain no-repeat;
+  opacity: 0.65;
+  pointer-events: none;
+}
+#km-settings select {
+  appearance: none;
+  width: auto;
+  min-width: min(10rem, 100%);
+  padding-inline: 10px 34px;
+  line-height: 1.5;
+  background: var(--material-background, Canvas);
+  border: 1px solid var(--fill-tertiary, GrayText);
+  cursor: pointer;
+}
+#km-settings select:hover:not(:disabled) { border-color: var(--fill-secondary, GrayText); }
+#km-settings select:focus-visible { outline: 2px solid var(--color-accent, #0a64db); outline-offset: 2px; }
+#km-settings select:disabled { cursor: default; opacity: 0.6; }
+#km-settings select option { background: var(--material-background, Canvas); color: var(--fill-primary, CanvasText); padding: 6px 10px; }
+#km-settings textarea { width: 28rem; min-height: 144px; resize: vertical; font-family: monospace; line-height: 1.5; }
+#km-settings code, #km-settings pre { font-size: 0.92em; }
+#km-settings .km-settings-field code { overflow-wrap: anywhere; }
+#km-settings pre { max-width: 100%; overflow-x: auto; padding: 12px; border-radius: 6px; background: var(--fill-quinary); }
+
+#km-settings .km-settings-actions { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; margin-block: 18px; }
+#km-settings .km-settings-actions button { flex: 0 0 auto; margin: 0; }
+#km-settings .km-settings-description { margin-block: 0 24px; color: var(--fill-secondary); line-height: 1.6; }
+#km-settings .km-settings-provider-help { margin: 0; color: var(--fill-secondary); line-height: 1.6; }
+#km-settings .km-vector-key-state { grid-column: 2; margin: 0; color: var(--fill-secondary); line-height: 1.5; }
+#km-settings .km-vector-test-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+#km-settings .km-vector-test-row button { margin: 0; }
+#km-settings .km-vector-test-row p { flex: 1 1 200px; margin: 0; line-height: 1.5; overflow-wrap: anywhere; }
+#km-settings .km-vector-feedback { min-height: 1.5em; line-height: 1.6; overflow-wrap: anywhere; }
+#km-settings [aria-invalid=true] { outline: 2px solid var(--accent-red, #b23434); }
+#km-settings details { margin-block: 24px; }
+#km-settings summary { cursor: pointer; font-weight: 600; }
+#km-settings details[open] > summary { margin-block-end: 16px; }
+#km-settings .km-vector-maintenance-row { margin-block: 16px; }
+#km-settings .km-vector-maintenance p { line-height: 1.6; }
+#km-settings .km-mcp-connection-settings { margin-block: 0 24px; }
+#km-settings .km-mcp-connection-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-block-end: 18px; }
+#km-settings .km-mcp-connection-heading h3 { margin: 0; }
+#km-settings .km-mcp-enabled-row { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; }
+#km-settings .km-mcp-connection-state { color: var(--accent-red, #b23434); }
+#km-settings .km-mcp-connection-state[data-state=running] { color: var(--accent-green, #287339); }
+#km-settings .km-mcp-copy-block { display: flex; align-items: start; gap: 10px; min-width: 0; max-width: 100%; padding: 12px; border-radius: 6px; background: var(--fill-quinary); }
+#km-settings .km-mcp-copy-block pre { flex: 1 1 auto; min-width: 0; margin: 0; padding: 4px 0; border-radius: 0; background: transparent; }
+#km-settings .km-mcp-copy-actions { display: flex; flex: 0 0 auto; flex-direction: column; align-items: end; gap: 4px; }
+#km-settings .km-mcp-copy-actions button { margin: 0; white-space: nowrap; }
+#km-settings .km-mcp-copy-actions [role=status] { max-width: 12rem; font-size: 0.92em; color: var(--fill-secondary, GrayText); }
+#km-settings .km-mcp-copy-actions [role=status]:empty { display: none; }
+#km-settings .km-mcp-token-toolbar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin-block: 24px 12px; }
+#km-settings .km-mcp-token-toolbar h3, #km-settings .km-mcp-token-toolbar button { margin: 0; }
+#km-settings #km-mcp-status:empty, #km-settings .km-mcp-editor-feedback:empty { display: none; }
+#km-settings .km-mcp-token-list { list-style: none; margin: 0; padding: 0; min-width: 0; border: 1px solid var(--fill-quaternary, #d9d9d9); border-radius: 8px; background: var(--material-background, Canvas); }
+#km-settings .km-mcp-token-list[hidden], #km-settings .km-mcp-token-summary[hidden], #km-settings .km-mcp-create-slot[hidden], #km-settings .km-mcp-editor-slot[hidden] { display: none; }
+#km-settings .km-mcp-token-entry { list-style: none; margin: 0; padding: 18px; min-width: 0; }
+#km-settings .km-mcp-token-entry + .km-mcp-token-entry { border-top: 1px solid var(--fill-quaternary, #e4e4e4); }
+#km-settings .km-mcp-token-header { display: flex; justify-content: space-between; align-items: start; flex-wrap: wrap; gap: 12px; }
+#km-settings .km-mcp-token-title { display: flex; flex: 1 1 160px; flex-wrap: wrap; align-items: baseline; gap: 8px 12px; min-width: 0; }
+#km-settings .km-mcp-token-title h4 { margin: 0; font: inherit; font-weight: 600; overflow-wrap: anywhere; }
+#km-settings .km-mcp-token-state { color: var(--fill-secondary, GrayText); font-size: 0.92em; white-space: nowrap; }
+#km-settings .km-mcp-token-entry[data-state=mcp-active] .km-mcp-token-state { color: var(--accent-green, #287339); }
+#km-settings .km-mcp-token-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+#km-settings .km-mcp-token-actions button { margin: 0; max-width: 100%; }
+#km-settings .km-mcp-token-actions [data-action=revoke] { appearance: none; border: 0; background: none; box-shadow: none; color: var(--fill-secondary, GrayText); padding-inline: 6px; }
+#km-settings .km-mcp-token-actions [data-action=revoke]:hover { color: var(--accent-red, #b23434); text-decoration: underline; }
+#km-settings .km-mcp-token-details { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 14px 24px; margin-block: 18px 14px; }
+#km-settings .km-mcp-token-details > div, #km-settings .km-mcp-token-metadata > div { min-width: 0; }
+#km-settings .km-mcp-token-details dt { margin-block: 0 6px; color: var(--fill-secondary, GrayText); font-size: 0.92em; }
+#km-settings .km-mcp-token-details dd, #km-settings .km-mcp-token-metadata dd { margin: 0; overflow-wrap: anywhere; }
+#km-settings .km-mcp-token-details ul { display: flex; flex-wrap: wrap; gap: 6px 12px; margin: 0; padding: 0; list-style: none; }
+#km-settings .km-mcp-token-details li { list-style: none; margin: 0; line-height: 1.6; }
+#km-settings .km-mcp-token-metadata { display: flex; flex-wrap: wrap; gap: 8px 24px; margin: 0; padding-block-start: 2px; color: var(--fill-secondary, GrayText); font-size: 0.92em; }
+#km-settings .km-mcp-token-metadata dd { color: inherit; font-variant-numeric: tabular-nums; }
+#km-settings .km-mcp-token-metadata > div { display: flex; flex-wrap: wrap; gap: 4px 8px; line-height: 1.6; }
+#km-settings .km-mcp-token-metadata dt { font-weight: 400; }
+#km-settings .km-mcp-token-editor { padding-block-start: 16px; min-width: 0; }
+#km-settings .km-mcp-token-editor h4 { margin-block: 0 18px; font-weight: 600; }
+#km-settings .km-mcp-token-editor .km-settings-description { margin: 0; }
+#km-settings .km-mcp-token-editor .km-settings-actions { margin-block: 12px 0; }
+#km-settings .km-mcp-editor-choices { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px 24px; margin-block-start: 20px; }
+#km-settings .km-mcp-editor-choices fieldset { display: flex; flex-direction: column; align-items: start; gap: 10px; margin: 0; border: 0; padding: 0; }
+#km-settings .km-mcp-editor-choices legend { padding: 0; margin-block-end: 10px; }
+#km-settings .km-mcp-create-slot { margin-block-end: 16px; padding: 0 18px 18px; border: 1px solid var(--fill-quaternary, #d9d9d9); border-radius: 8px; background: var(--material-background, Canvas); }
+#km-settings .km-mcp-token-confirmation { margin-block-start: 16px; padding-block-start: 14px; border-top: 1px solid var(--fill-quaternary, #e4e4e4); }
+#km-settings .km-mcp-token-confirmation p { margin: 0; line-height: 1.6; }
+#km-settings .km-mcp-token-confirmation .km-settings-actions { margin-block: 10px 0; }
+#km-settings [data-action=confirm-revoke] { color: var(--accent-red, #b23434); }
+#km-settings #km-mcp-secret-container:not(:empty) { margin-block-start: 14px; padding-block-start: 4px; }
+#km-settings #km-mcp-secret-container > p { margin-block: 0 12px; line-height: 1.6; color: var(--fill-secondary, GrayText); }
+#km-settings #km-mcp-secret-container .km-settings-actions { margin-block: 12px 0; }
+
+@container (max-width: 440px) {
+  #km-settings .km-mcp-token-details, #km-settings .km-mcp-editor-choices { grid-template-columns: minmax(0, 1fr); }
+  #km-settings .km-mcp-token-header { gap: 10px; }
+  #km-settings .km-settings-field { grid-template-columns: minmax(0, 1fr); }
+  #km-settings .km-settings-field:has(textarea) > label { padding-block-start: 0; }
+  #km-settings .km-vector-key-state { grid-column: 1; }
+}
