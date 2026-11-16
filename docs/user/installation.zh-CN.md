@@ -1,8 +1,11 @@
 # 安装与升级
 
+[下载 XPI 插件](https://github.com/lianghx123/zoteroknowledgemcp/releases/download/v0.2.0-preview.1/zotero-knowledge-mcp.xpi){ .md-button .md-button--primary }
+[SHA-256 校验文件](https://github.com/lianghx123/zoteroknowledgemcp/releases/download/v0.2.0-preview.1/SHA256SUMS){ .md-button }
+
 [发行说明与全部版本](https://github.com/lianghx123/zoteroknowledgemcp/releases)
 
-目前没有已发布的预编译安装包。以下安装步骤适用于发布页提供 XPI 和校验文件之后；开发者可按开发指南自行构建源码。
+当前下载：0.2.0-preview.1，适用于 Zotero 10.0.x。仓库为私有时，请先登录有仓库访问权限的 GitHub 账号；公开文档站点不会使私有发布附件变为公开。
 
 ## 使用要求
 
@@ -12,7 +15,7 @@
 
 ## 安装
 
-1. 打开[预览版发布页](https://github.com/lianghx123/zoteroknowledgemcp/releases)。仓库为私有时，请登录有访问权限的账号。
+1. 打开[预览版发布页](https://github.com/lianghx123/zoteroknowledgemcp/releases/tag/v0.2.0-preview.1)。仓库为私有时，请登录有访问权限的账号。
 2. 下载 **zotero-knowledge-mcp.xpi**。GitHub 的源码 ZIP、tar 压缩包不能作为插件安装。
 3. 在 Zotero 中打开**工具 → 插件**，点击齿轮菜单，选择**从文件安装插件…**，然后选择 XPI。
 4. 如果 Zotero 要求重启，请按提示操作。打开 **Zotero 设置 → Knowledge MCP**。

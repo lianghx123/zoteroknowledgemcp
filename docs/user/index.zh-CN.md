@@ -2,11 +2,14 @@
 
 将选定的 Zotero PDF 附件转换为可在本地检索的知识库。在 PDF 旁阅读提取的正文，按需修正文稿，并通过模型上下文协议（MCP）明确授权 AI 客户端访问。
 
-**源码预览: 0.2.0-preview.1.** 需要 Zotero **10.0.x**。原生验收使用 Windows 和 Zotero 10.0.6–10.0.8；macOS、Linux 的同等验收仍待完成。预览版目前采用手动安装与升级。
+**当前版本：0.2.0-preview.1。** 需要 Zotero **10.0.x**。原生验收使用 Windows 和 Zotero 10.0.6–10.0.8；macOS、Linux 的同等验收仍待完成。预览版目前采用手动安装与升级。
+
+[下载 XPI 插件](https://github.com/lianghx123/zoteroknowledgemcp/releases/download/v0.2.0-preview.1/zotero-knowledge-mcp.xpi){ .md-button .md-button--primary }
+[SHA-256 校验文件](https://github.com/lianghx123/zoteroknowledgemcp/releases/download/v0.2.0-preview.1/SHA256SUMS){ .md-button }
 
 [发行说明与全部版本](https://github.com/lianghx123/zoteroknowledgemcp/releases)
 
-目前没有已发布的预编译安装包。以下安装步骤适用于发布页提供 XPI 和校验文件之后；开发者可按开发指南自行构建源码。
+当前下载：0.2.0-preview.1，适用于 Zotero 10.0.x。仓库为私有时，请先登录有仓库访问权限的 GitHub 账号；公开文档站点不会使私有发布附件变为公开。
 
 ## 从这里开始
 

@@ -2,7 +2,7 @@
 
 ## État de la préversion
 
-La préversion du code source **0.2.0-preview.1**, sans installateur publié, cible Zotero **10.0.x**. Les vérifications natives ont utilisé Windows et Zotero 10.0.6–10.0.8. macOS, Linux, fiabilité sur longue durée et validation manuelle exhaustive des langues/interfaces restent à vérifier. Les tests Node simulent les comportements natifs et ne remplacent pas les tests Zotero ou fournisseur.
+La préversion publiée **0.2.0-preview.1** cible Zotero **10.0.x**. Les vérifications natives ont utilisé Windows et Zotero 10.0.6–10.0.8. macOS, Linux, fiabilité sur longue durée et validation manuelle exhaustive des langues/interfaces restent à vérifier. Les tests Node simulent les comportements natifs et ne remplacent pas les tests Zotero ou fournisseur.
 
 L’interface et ce guide prennent en charge anglais, chinois simplifié et traditionnel, allemand, français, espagnol et japonais. Le sélecteur de langue change la page courante.
 

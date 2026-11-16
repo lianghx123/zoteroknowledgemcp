@@ -2,11 +2,14 @@
 
 將選定的 Zotero PDF 附件轉換為可在本機檢索的知識庫。在 PDF 旁閱讀擷取的正文，按需修正文稿，並透過模型上下文協議（MCP）明確授權 AI 用戶端存取。
 
-**原始碼預覽: 0.2.0-preview.1.** 需要 Zotero **10.0.x**。原生驗收使用 Windows 和 Zotero 10.0.6–10.0.8；macOS、Linux 的同等驗收仍待完成。預覽版目前採用手動安裝與升級。
+**目前版本：0.2.0-preview.1。** 需要 Zotero **10.0.x**。原生驗收使用 Windows 和 Zotero 10.0.6–10.0.8；macOS、Linux 的同等驗收仍待完成。預覽版目前採用手動安裝與升級。
+
+[下載 XPI 外掛](https://github.com/lianghx123/zoteroknowledgemcp/releases/download/v0.2.0-preview.1/zotero-knowledge-mcp.xpi){ .md-button .md-button--primary }
+[SHA-256 驗證檔案](https://github.com/lianghx123/zoteroknowledgemcp/releases/download/v0.2.0-preview.1/SHA256SUMS){ .md-button }
 
 [發行說明與所有版本](https://github.com/lianghx123/zoteroknowledgemcp/releases)
 
-目前沒有已釋出的預先編譯安裝包。以下安裝步驟適用於釋出頁提供 XPI 和驗證檔案之後；開發者可依開發指南自行建置原始碼。
+目前下載：0.2.0-preview.1，適用於 Zotero 10.0.x。儲存庫為私有時，請先登入具備存取權限的 GitHub 帳號；公開文件網站不會讓私有版本附件變為公開。
 
 ## 從這裡開始
 

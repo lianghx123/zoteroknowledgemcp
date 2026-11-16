@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
+import { readFileSync } from "node:fs";
 import { build } from "esbuild";
 import { JSDOM } from "jsdom";
 import { mockLocalization } from "./helpers/localization.mjs";
@@ -571,6 +572,8 @@ test("HTTP uses only SSE for initialization, discovery and tool calls; validates
     const r = await send(message); assert.equal(r.status, 200); assert.match(r.headers["Content-Type"], /^text\/event-stream/); assert.match(r.body, /event: message\ndata: /);
     if (message.method === "initialize") {
       const result = JSON.parse(/^data: (.+)$/m.exec(r.body)[1]).result;
+      const packageVersion = JSON.parse(readFileSync(new URL("../package.json", import.meta.url), "utf8")).version;
+      assert.equal(result.serverInfo.version, packageVersion, "MCP initialization must identify the installed package version");
       const identity = result._meta["zotero-knowledge-mcp/identity"];
       assert.equal(identity.applicationContract, "2.4.0"); assert.match(identity.schemaFingerprint, /^[a-f0-9]{64}$/);
       assert.deepEqual(identity.build, { commit: null, dirty: null, sourceFingerprint: null }, "Unbundled tests must not fabricate build provenance");

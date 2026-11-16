@@ -1,8 +1,11 @@
 # 安裝與升級
 
+[下載 XPI 外掛](https://github.com/lianghx123/zoteroknowledgemcp/releases/download/v0.2.0-preview.1/zotero-knowledge-mcp.xpi){ .md-button .md-button--primary }
+[SHA-256 驗證檔案](https://github.com/lianghx123/zoteroknowledgemcp/releases/download/v0.2.0-preview.1/SHA256SUMS){ .md-button }
+
 [發行說明與所有版本](https://github.com/lianghx123/zoteroknowledgemcp/releases)
 
-目前沒有已釋出的預先編譯安裝包。以下安裝步驟適用於釋出頁提供 XPI 和驗證檔案之後；開發者可依開發指南自行建置原始碼。
+目前下載：0.2.0-preview.1，適用於 Zotero 10.0.x。儲存庫為私有時，請先登入具備存取權限的 GitHub 帳號；公開文件網站不會讓私有版本附件變為公開。
 
 ## 使用要求
 
@@ -12,7 +15,7 @@
 
 ## 安裝
 
-1. 開啟[預覽版釋出頁](https://github.com/lianghx123/zoteroknowledgemcp/releases)。儲存庫為私有時，請登入有存取權限的帳號。
+1. 開啟[預覽版釋出頁](https://github.com/lianghx123/zoteroknowledgemcp/releases/tag/v0.2.0-preview.1)。儲存庫為私有時，請登入有存取權限的帳號。
 2. 下載 **zotero-knowledge-mcp.xpi**。GitHub 的原始碼 ZIP、tar 壓縮包不能作為外掛安裝。
 3. 在 Zotero 中開啟**工具 → 外掛**，點選齒輪選單，選擇**從檔案安裝外掛…**，然後選擇 XPI。
 4. 如果 Zotero 要求重新啟動，請按提示操作。開啟 **Zotero 設定 → Knowledge MCP**。

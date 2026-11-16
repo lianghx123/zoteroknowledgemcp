@@ -13,14 +13,10 @@ Your papers stay organized in Zotero. The plugin adds processed text, knowledge
 folders, retrieval and AI access to that workflow. It works with MCP clients such
 as AI-Scientist and Codex; you can also use its reading and search tools directly.
 
-**[Release availability](https://github.com/lianghx123/zoteroknowledgemcp/releases)**
+**[Download the preview XPI](https://github.com/lianghx123/zoteroknowledgemcp/releases/download/v0.2.0-preview.1/zotero-knowledge-mcp.xpi)**
 · **[User guide](https://lianghx123.github.io/zoteroknowledgemcp/)**
-· [Release notes](https://github.com/lianghx123/zoteroknowledgemcp/releases)
+· [Release notes](https://github.com/lianghx123/zoteroknowledgemcp/releases/tag/v0.2.0-preview.1)
 · [Report a problem](https://github.com/lianghx123/zoteroknowledgemcp/issues)
-
-No prebuilt installer is currently published. Contributors can build the source
-using the [development guide](docs/development/getting-started.md). The installation
-steps below apply when a reviewed XPI is available.
 
 User guides: [English](https://lianghx123.github.io/zoteroknowledgemcp/)
 · [简体中文](https://lianghx123.github.io/zoteroknowledgemcp/zh-CN/)

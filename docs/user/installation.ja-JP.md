@@ -1,8 +1,11 @@
 # インストールと更新
 
+[XPI をダウンロード](https://github.com/lianghx123/zoteroknowledgemcp/releases/download/v0.2.0-preview.1/zotero-knowledge-mcp.xpi){ .md-button .md-button--primary }
+[SHA-256 チェックサム](https://github.com/lianghx123/zoteroknowledgemcp/releases/download/v0.2.0-preview.1/SHA256SUMS){ .md-button }
+
 [リリースノートとすべてのバージョン](https://github.com/lianghx123/zoteroknowledgemcp/releases)
 
-現在、ビルド済みインストーラーは公開されていません。以下の手順は、リリースページで XPI とチェックサムが提供された後に適用されます。開発者は開発ガイドに従ってソースをビルドできます。
+現在のダウンロードは Zotero 10.0.x 向けの 0.2.0-preview.1 です。リポジトリが非公開の間は、アクセス権のある GitHub アカウントでログインしてください。公開ドキュメントサイトから非公開リリースのファイルが公開されることはありません。
 
 ## 必要な環境
 
@@ -12,7 +15,7 @@
 
 ## インストール
 
-1. [プレビュー版リリース](https://github.com/lianghx123/zoteroknowledgemcp/releases)を開きます。リポジトリが非公開の間はアクセス権のあるアカウントでログインしてください。
+1. [プレビュー版リリース](https://github.com/lianghx123/zoteroknowledgemcp/releases/tag/v0.2.0-preview.1)を開きます。リポジトリが非公開の間はアクセス権のあるアカウントでログインしてください。
 2. **zotero-knowledge-mcp.xpi** をダウンロードします。ソースの ZIP や tar はインストールできるプラグインではありません。
 3. Zotero の **ツール → プラグイン**から歯車メニューを開き、**ファイルからプラグインをインストール…**で XPI を選びます。
 4. 求められた場合は再起動し、**Zotero 設定 → Knowledge MCP** を開きます。

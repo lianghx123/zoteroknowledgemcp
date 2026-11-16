@@ -2,11 +2,14 @@
 
 Verwandeln Sie ausgewählte Zotero-PDF-Anhänge in eine lokal durchsuchbare Wissensbibliothek. Lesen und korrigieren Sie extrahierten Text neben dem PDF und erlauben Sie KI-Clients gezielten Zugriff über das Model Context Protocol (MCP).
 
-**Quellcode-Vorschau: 0.2.0-preview.1.** Erfordert Zotero **10.0.x**. Native Abnahmeprüfungen erfolgten unter Windows mit Zotero 10.0.6–10.0.8; entsprechende Prüfungen unter macOS und Linux stehen aus. Installation und Upgrades dieser Vorschau erfolgen manuell.
+**Aktuelle Version: 0.2.0-preview.1.** Erfordert Zotero **10.0.x**. Native Abnahmeprüfungen erfolgten unter Windows mit Zotero 10.0.6–10.0.8; entsprechende Prüfungen unter macOS und Linux stehen aus. Installation und Upgrades dieser Vorschau erfolgen manuell.
+
+[XPI herunterladen](https://github.com/lianghx123/zoteroknowledgemcp/releases/download/v0.2.0-preview.1/zotero-knowledge-mcp.xpi){ .md-button .md-button--primary }
+[SHA-256-Prüfsumme](https://github.com/lianghx123/zoteroknowledgemcp/releases/download/v0.2.0-preview.1/SHA256SUMS){ .md-button }
 
 [Versionshinweise und alle Versionen](https://github.com/lianghx123/zoteroknowledgemcp/releases)
 
-Derzeit ist kein vorgefertigtes Installationspaket veröffentlicht. Die folgenden Schritte gelten, sobald eine XPI-Datei und ihre Prüfsumme auf der Release-Seite verfügbar sind. Mitwirkende können den Quellcode gemäß der Entwicklungsanleitung bauen.
+Aktueller Download: 0.2.0-preview.1 für Zotero 10.0.x. Melden Sie sich mit einem berechtigten GitHub-Konto an, solange das Repository privat ist. Die öffentliche Dokumentation macht private Release-Dateien nicht öffentlich.
 
 ## Hier beginnen
 

@@ -123,7 +123,7 @@ export class McpHttp {
       if (method === "initialize") {
         if (typeof values.protocolVersion !== "string" || !values.clientInfo || !values.capabilities) error = { code: -32602, message: "Invalid initialization parameters." };
         else result = { protocolVersion: protocolVersions.includes(values.protocolVersion) ? values.protocolVersion : protocolVersions[0], capabilities: { tools: { listChanged: false } },
-          serverInfo: { name: "zotero-knowledge-mcp", version: "0.1.2" }, _meta: { "zotero-knowledge-mcp/identity": await implementationIdentity() },
+          serverInfo: { name: "zotero-knowledge-mcp", version: "0.2.0-preview.1" }, _meta: { "zotero-knowledge-mcp/identity": await implementationIdentity() },
           instructions: `Local knowledge tools, application contract ${applicationContract}. Discover with list_resources, inspect bibliographic detail with get_resources, then search or read evidence. Reading includes original paper footnotes. Text and quote continuations use Unicode code points and bind current content/authorization. Personal tokens use authorized/library/resource/node scopes. Vector/rerank search may contact configured providers. Writes require explicit token permissions; retry uncertain writes with the original operation ID and arguments.` };
       } else if (method === "ping") result = {};
       else if (method === "tools/list") result = { tools: toolDefinitions };

@@ -2,7 +2,7 @@
 
 ## Preview status
 
-The current source version is **0.2.0-preview.1**, with no published installer. It targets Zotero **10.0.x**;
+The current published preview is **0.2.0-preview.1**. It targets Zotero **10.0.x**;
 native development checks have used Windows with Zotero 10.0.6–10.0.8. macOS,
 Linux, long-running reliability and exhaustive manual UI/locale acceptance
 remain open. Automated Node tests simulate native behavior and are not a

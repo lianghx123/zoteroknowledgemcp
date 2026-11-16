@@ -2,7 +2,7 @@
 
 ## Estado de la versión preliminar
 
-La versión del código fuente **0.2.0-preview.1**, sin instalador publicado, se dirige a Zotero **10.0.x**. Las pruebas nativas usaron Windows y Zotero 10.0.6–10.0.8. Quedan pendientes macOS, Linux, fiabilidad prolongada y validación manual exhaustiva de interfaz/idiomas. Las pruebas Node simulan comportamiento nativo y no sustituyen la validación en Zotero o con proveedores.
+La versión publicada **0.2.0-preview.1** se dirige a Zotero **10.0.x**. Las pruebas nativas usaron Windows y Zotero 10.0.6–10.0.8. Quedan pendientes macOS, Linux, fiabilidad prolongada y validación manual exhaustiva de interfaz/idiomas. Las pruebas Node simulan comportamiento nativo y no sustituyen la validación en Zotero o con proveedores.
 
 La interfaz y el manual admiten inglés, chino simplificado y tradicional, alemán, francés, español y japonés. El selector cambia el idioma de la página actual.
 

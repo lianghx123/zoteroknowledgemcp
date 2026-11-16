@@ -81,11 +81,11 @@ both theme toggles, links, button states and narrow layouts after palette change
 
 The deployed public URL is `https://lianghx123.github.io/zoteroknowledgemcp/`.
 Pages visibility is independent of the repository and plugin download permissions.
-Localized homepages and installation pages link to the release inventory and
-currently state that no installer is published. Add version-pinned XPI and
-checksum buttons only after the corresponding release assets exist. Update both
-pages and support status in all seven languages when distribution changes;
-never advertise a removed release or temporary Actions artifact as an installer.
+Localized homepages and installation pages provide version-pinned XPI and
+checksum buttons plus a release-inventory link. Update both pages and support
+status in all seven languages when distribution changes, and verify the actual
+release assets. Remove download buttons when no installer is available; never
+advertise removed releases or temporary Actions artifacts as installers.
 
 ## Local Build and Preview
 

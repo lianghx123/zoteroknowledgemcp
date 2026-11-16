@@ -1,6 +1,6 @@
 # Project Delivery Status
 
-Source preview version: **0.2.0-preview.1**. No installer is currently published. Application contract: **2.4.0**.
+Preview version: **0.2.0-preview.1**. Application contract: **2.4.0**.
 The package version, application contract, negotiated MCP protocol and database
 migrations are independent version concepts. See the [development guide](getting-started.md)
 for setup and the [implementation overview](implementation-overview.md) for behavior.
@@ -57,7 +57,7 @@ audit reported zero known vulnerabilities at that time; development-tool
 advisories remain a separate review. See [parser security](markdown-reader.md#markdown-parser-security)
 and [release checks](releases.md#prepare-and-validate).
 
-Any future installer must identify its exact source snapshot. Each release
+Each installer identifies its exact source snapshot. Each release
 requires its own exact-package validation and checksum; see [release procedure](releases.md).
 
 ## Remaining Acceptance Priorities

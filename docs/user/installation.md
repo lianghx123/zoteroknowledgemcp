@@ -1,8 +1,11 @@
 # Install and upgrade
 
+[Download XPI](https://github.com/lianghx123/zoteroknowledgemcp/releases/download/v0.2.0-preview.1/zotero-knowledge-mcp.xpi){ .md-button .md-button--primary }
+[SHA-256 checksum](https://github.com/lianghx123/zoteroknowledgemcp/releases/download/v0.2.0-preview.1/SHA256SUMS){ .md-button }
+
 [Release notes and all versions](https://github.com/lianghx123/zoteroknowledgemcp/releases)
 
-No prebuilt installer is currently published. The instructions below apply when an XPI and its checksum become available on the release page. Contributors can build the source using the development guide.
+Current download: 0.2.0-preview.1 for Zotero 10.0.x. While the repository is private, sign in to GitHub with an account that has repository access. A public documentation site does not make private release assets public.
 
 ## Requirements
 
@@ -14,7 +17,7 @@ No prebuilt installer is currently published. The instructions below apply when 
 
 ## Install
 
-1. Open the [preview release](https://github.com/lianghx123/zoteroknowledgemcp/releases).
+1. Open the [preview release](https://github.com/lianghx123/zoteroknowledgemcp/releases/tag/v0.2.0-preview.1).
    While the repository is private, sign in with an account that has access.
 2. Download **zotero-knowledge-mcp.xpi**. GitHub's source ZIP and tar archives
    are not installable plugins.

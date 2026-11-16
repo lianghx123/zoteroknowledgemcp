@@ -1,8 +1,11 @@
 # Instalación y actualización
 
+[Descargar XPI](https://github.com/lianghx123/zoteroknowledgemcp/releases/download/v0.2.0-preview.1/zotero-knowledge-mcp.xpi){ .md-button .md-button--primary }
+[Suma de verificación SHA-256](https://github.com/lianghx123/zoteroknowledgemcp/releases/download/v0.2.0-preview.1/SHA256SUMS){ .md-button }
+
 [Notas y todas las versiones](https://github.com/lianghx123/zoteroknowledgemcp/releases)
 
-Actualmente no hay un instalador precompilado publicado. Los pasos siguientes se aplican cuando la página de versiones ofrezca un XPI y su suma de verificación. Los colaboradores pueden compilar el código con la guía de desarrollo.
+Descarga actual: 0.2.0-preview.1 para Zotero 10.0.x. Mientras el repositorio sea privado, inicia sesión en GitHub con una cuenta autorizada. La documentación pública no hace públicos los archivos privados de las versiones.
 
 ## Requisitos
 
@@ -12,7 +15,7 @@ Actualmente no hay un instalador precompilado publicado. Los pasos siguientes se
 
 ## Instalar
 
-1. Abre la [versión preliminar](https://github.com/lianghx123/zoteroknowledgemcp/releases). Mientras el repositorio sea privado, inicia sesión con una cuenta autorizada.
+1. Abre la [versión preliminar](https://github.com/lianghx123/zoteroknowledgemcp/releases/tag/v0.2.0-preview.1). Mientras el repositorio sea privado, inicia sesión con una cuenta autorizada.
 2. Descarga **zotero-knowledge-mcp.xpi**. Los ZIP y tar del código fuente no son complementos instalables.
 3. En Zotero, abre **Herramientas → Complementos**, el menú del engranaje y **Instalar complemento desde archivo…**. Selecciona el XPI.
 4. Reinicia si se solicita y abre **Ajustes de Zotero → Knowledge MCP**.

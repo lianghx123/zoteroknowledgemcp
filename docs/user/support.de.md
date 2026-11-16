@@ -2,7 +2,7 @@
 
 ## Vorschauzustand
 
-Die Quellcode-Vorschau **0.2.0-preview.1** ohne veröffentlichtes Installationspaket richtet sich an Zotero **10.0.x**. Native Prüfungen verwendeten Windows und Zotero 10.0.6–10.0.8. macOS, Linux, Langzeitzuverlässigkeit und vollständige manuelle Oberflächen-/Sprachabnahme stehen aus. Automatische Node-Tests simulieren natives Verhalten und ersetzen keine Zotero- oder Anbieterprüfung.
+Die veröffentlichte Vorschau **0.2.0-preview.1** richtet sich an Zotero **10.0.x**. Native Prüfungen verwendeten Windows und Zotero 10.0.6–10.0.8. macOS, Linux, Langzeitzuverlässigkeit und vollständige manuelle Oberflächen-/Sprachabnahme stehen aus. Automatische Node-Tests simulieren natives Verhalten und ersetzen keine Zotero- oder Anbieterprüfung.
 
 Oberfläche und Handbuch unterstützen Englisch, vereinfachtes/traditionelles Chinesisch, Deutsch, Französisch, Spanisch und Japanisch. Der Sprachwähler wechselt die aktuelle Seite.
 

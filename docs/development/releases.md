@@ -1,7 +1,7 @@
 # Plugin Release Procedure
 
-The source version is **0.2.0-preview.1**; no installer or release tag is
-currently published. Future reviewed `v*` tags use GitHub Actions.
+The first preview is **0.2.0-preview.1**, tagged **v0.2.0-preview.1**.
+Reviewed `v*` tags use GitHub Actions to validate, package and publish releases.
 Tags with a prerelease suffix produce GitHub pre-releases; stable tags produce
 stable releases. Repository visibility remains a separate maintainer decision.
 While private, only users with repository access can download the assets.
