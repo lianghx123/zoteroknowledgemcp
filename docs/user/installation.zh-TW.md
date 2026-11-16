@@ -5,7 +5,7 @@
 
 [發行說明與所有版本](https://github.com/lianghx123/zoteroknowledgemcp/releases)
 
-目前下載：0.2.0-preview.1，適用於 Zotero 10.0.x。儲存庫為私有時，請先登入具備存取權限的 GitHub 帳號；公開文件網站不會讓私有版本附件變為公開。
+目前下載：0.2.0-preview.1，適用於 Zotero 10.0.x。原始碼、釋出頁 XPI 和驗證檔案均已公開，無需 GitHub 帳號即可下載。
 
 ## 使用要求
 
@@ -15,7 +15,7 @@
 
 ## 安裝
 
-1. 開啟[預覽版釋出頁](https://github.com/lianghx123/zoteroknowledgemcp/releases/tag/v0.2.0-preview.1)。儲存庫為私有時，請登入有存取權限的帳號。
+1. 開啟[預覽版釋出頁](https://github.com/lianghx123/zoteroknowledgemcp/releases/tag/v0.2.0-preview.1)。
 2. 下載 **zotero-knowledge-mcp.xpi**。GitHub 的原始碼 ZIP、tar 壓縮包不能作為外掛安裝。
 3. 在 Zotero 中開啟**工具 → 外掛**，點選齒輪選單，選擇**從檔案安裝外掛…**，然後選擇 XPI。
 4. 如果 Zotero 要求重新啟動，請按提示操作。開啟 **Zotero 設定 → Knowledge MCP**。
@@ -37,6 +37,6 @@ macOS 使用 `shasum -a 256 zotero-knowledge-mcp.xpi`；Linux 使用 `sha256sum 
 2. 閱讀目標版本的發行說明，再按照相同步驟安裝其 XPI。
 3. 檢查知識庫和已處理文獻後，再決定何時清理備份。
 
-目前私有儲存庫的預覽版仍須手動升級。自動更新流程已準備好，但僅在儲存庫和安裝套件可公開存取後提供已驗證的正式版；預覽版始終手動安裝。Zotero 本身的自動更新設定決定是否安裝可用的正式更新。尚無正式發布時，更新來源維持空白。安裝舊 XPI 不會降級外掛資料庫；舊版本可能拒絕較新的結構，復原需要相容的外部備份。
+預覽版一律手動安裝與升級。自動更新管道僅提供已驗證的正式版；Zotero 本身的自動更新設定決定是否安裝可用的正式更新。尚無正式發布時，更新來源維持空白。安裝舊 XPI 不會降級外掛資料庫；舊版本可能拒絕較新的結構，復原需要相容的外部備份。
 
 停用或移除外掛會保留已存資料。重設或切換 Zotero 資料目錄前，請閱讀[資料與隱私](privacy.md)。

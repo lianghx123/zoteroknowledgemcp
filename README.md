@@ -28,8 +28,8 @@ User guides: [English](https://lianghx123.github.io/zoteroknowledgemcp/)
 
 > **Preview: 0.2.0-preview.1 · Zotero 10.0.x**
 > Native development checks have used Windows with Zotero 10.0.6–10.0.8.
-> Equivalent macOS/Linux acceptance is pending. While the repository is private,
-> GitHub downloads require an account with repository access.
+> Equivalent macOS/Linux acceptance is pending. Source, release installers and
+> checksums are public; downloads do not require a GitHub account.
 
 ## What you can do
 
@@ -145,9 +145,8 @@ is shown once; grant only the libraries and permissions the client needs.
   in local `parsing.json`; model keys use Gecko Login Manager. Close Zotero and
   back up its complete data directory before preview upgrades. Upgrade snapshots
   do not replace a complete external backup.
-- **Previews update manually.** The prepared automatic channel accepts verified
-  stable releases only after the repository and installers are publicly
-  accessible. With no stable release, the feed remains empty. Installing an older
+- **Previews update manually.** The automatic channel accepts verified stable
+  releases only. With no stable release, the feed remains empty. Installing an older
   XPI does not downgrade a newer database schema.
 
 [Data and privacy](https://lianghx123.github.io/zoteroknowledgemcp/privacy/)

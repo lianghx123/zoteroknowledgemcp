@@ -10,7 +10,7 @@
 
 ## 問題の報告
 
-[Issue トラッカー](https://github.com/lianghx123/zoteroknowledgemcp/issues)を使います。非公開中は権限が必要です。次を記載してください。
+[Issue トラッカー](https://github.com/lianghx123/zoteroknowledgemcp/issues)は公開されています。Issue の作成やコメントには GitHub へのログインが必要です。次を記載してください。
 
 - プラグインと Zotero の版、OS。
 - 再現手順、期待する動作と実際の動作。

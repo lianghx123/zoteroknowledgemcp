@@ -10,7 +10,7 @@ Oberfläche und Handbuch unterstützen Englisch, vereinfachtes/traditionelles Ch
 
 ## Problem melden
 
-Verwenden Sie den [Issue-Tracker](https://github.com/lianghx123/zoteroknowledgemcp/issues), solange privat nur für berechtigte Konten. Geben Sie an:
+Der [Issue-Tracker](https://github.com/lianghx123/zoteroknowledgemcp/issues) ist öffentlich. Zum Erstellen oder Kommentieren eines Issues melden Sie sich bei GitHub an. Geben Sie an:
 
 - Plugin-/Zotero-Version und Betriebssystem.
 - Reproduktionsschritte sowie erwartetes und tatsächliches Verhalten.

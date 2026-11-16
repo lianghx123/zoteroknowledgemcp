@@ -10,7 +10,7 @@ Consulta las [notas de versión](https://github.com/lianghx123/zoteroknowledgemc
 
 ## Informar de una incidencia
 
-Usa el [gestor de incidencias](https://github.com/lianghx123/zoteroknowledgemcp/issues), accesible solo a cuentas autorizadas mientras el repositorio sea privado. Incluye:
+El [gestor de incidencias](https://github.com/lianghx123/zoteroknowledgemcp/issues) es público. Inicia sesión en GitHub para abrir una incidencia o comentar. Incluye:
 
 - Versiones del complemento y Zotero, y sistema operativo.
 - Pasos, comportamiento esperado y observado.

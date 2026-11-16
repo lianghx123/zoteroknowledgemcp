@@ -5,7 +5,7 @@
 
 [Notas y todas las versiones](https://github.com/lianghx123/zoteroknowledgemcp/releases)
 
-Descarga actual: 0.2.0-preview.1 para Zotero 10.0.x. Mientras el repositorio sea privado, inicia sesión en GitHub con una cuenta autorizada. La documentación pública no hace públicos los archivos privados de las versiones.
+Descarga actual: 0.2.0-preview.1 para Zotero 10.0.x. El código fuente, el XPI publicado y su suma de verificación son públicos y se pueden descargar sin una cuenta de GitHub.
 
 ## Requisitos
 
@@ -15,7 +15,7 @@ Descarga actual: 0.2.0-preview.1 para Zotero 10.0.x. Mientras el repositorio sea
 
 ## Instalar
 
-1. Abre la [versión preliminar](https://github.com/lianghx123/zoteroknowledgemcp/releases/tag/v0.2.0-preview.1). Mientras el repositorio sea privado, inicia sesión con una cuenta autorizada.
+1. Abre la [versión preliminar](https://github.com/lianghx123/zoteroknowledgemcp/releases/tag/v0.2.0-preview.1).
 2. Descarga **zotero-knowledge-mcp.xpi**. Los ZIP y tar del código fuente no son complementos instalables.
 3. En Zotero, abre **Herramientas → Complementos**, el menú del engranaje y **Instalar complemento desde archivo…**. Selecciona el XPI.
 4. Reinicia si se solicita y abre **Ajustes de Zotero → Knowledge MCP**.
@@ -37,6 +37,6 @@ En macOS: `shasum -a 256 zotero-knowledge-mcp.xpi`; en Linux: `sha256sum zotero-
 2. Lee las notas de la versión de destino e instala su XPI con los mismos pasos.
 3. Conserva la copia hasta comprobar bibliotecas y documentos procesados.
 
-Las actualizaciones de la versión preliminar privada siguen siendo manuales. El canal automático está preparado, pero solo ofrecerá versiones estables verificadas cuando el repositorio y los instaladores sean públicos. Las versiones preliminares siempre se instalan manualmente. El ajuste de actualizaciones de Zotero controla la instalación de las versiones estables ofrecidas. Sin una versión estable publicada, la fuente queda vacía. Instalar un XPI anterior no rebaja el esquema de la base. Una versión antigua puede rechazar un esquema nuevo; la recuperación requiere una copia externa compatible.
+Las versiones preliminares siempre se instalan y actualizan manualmente. El canal automático solo ofrece versiones estables verificadas. Los ajustes de actualización de Zotero controlan su instalación. Sin una versión estable publicada, la fuente permanece vacía. Instalar un XPI anterior no reduce la versión del esquema; la recuperación requiere una copia externa compatible si una versión antigua rechaza un esquema más reciente.
 
 Desactivar o desinstalar conserva los datos. Consulta [Datos y privacidad](privacy.md) antes de restablecer o cambiar el directorio de Zotero.

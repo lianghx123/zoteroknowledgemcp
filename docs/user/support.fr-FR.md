@@ -10,7 +10,7 @@ Consultez les [notes de version](https://github.com/lianghx123/zoteroknowledgemc
 
 ## Signaler un problème
 
-Utilisez le [suivi des problèmes](https://github.com/lianghx123/zoteroknowledgemcp/issues), réservé aux comptes autorisés tant que le dépôt est privé. Indiquez :
+Le [suivi des problèmes](https://github.com/lianghx123/zoteroknowledgemcp/issues) est public. Connectez-vous à GitHub pour ouvrir un problème ou le commenter. Indiquez :
 
 - Versions du module et de Zotero, et système d’exploitation.
 - Étapes, résultat attendu et résultat observé.

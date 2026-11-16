@@ -5,7 +5,7 @@
 
 [Notes et toutes les versions](https://github.com/lianghx123/zoteroknowledgemcp/releases)
 
-Téléchargement actuel : 0.2.0-preview.1 pour Zotero 10.0.x. Tant que le dépôt est privé, connectez-vous à GitHub avec un compte autorisé. Le site public de documentation ne rend pas publics les fichiers privés des versions.
+Téléchargement actuel : 0.2.0-preview.1 pour Zotero 10.0.x. Le code source, le XPI publié et sa somme de contrôle sont publics et téléchargeables sans compte GitHub.
 
 ## Prérequis
 
@@ -15,7 +15,7 @@ Téléchargement actuel : 0.2.0-preview.1 pour Zotero 10.0.x. Tant que le dépô
 
 ## Installer
 
-1. Ouvrez la [préversion](https://github.com/lianghx123/zoteroknowledgemcp/releases/tag/v0.2.0-preview.1). Tant que le dépôt est privé, connectez-vous avec un compte autorisé.
+1. Ouvrez la [préversion](https://github.com/lianghx123/zoteroknowledgemcp/releases/tag/v0.2.0-preview.1).
 2. Téléchargez **zotero-knowledge-mcp.xpi**. Les archives ZIP et tar du code source ne sont pas des modules installables.
 3. Dans Zotero, ouvrez **Outils → Modules complémentaires**, puis le menu engrenage et **Installer un module depuis un fichier…**. Sélectionnez le XPI.
 4. Redémarrez si Zotero le demande, puis ouvrez **Paramètres de Zotero → Knowledge MCP**.
@@ -37,6 +37,6 @@ Sous macOS : `shasum -a 256 zotero-knowledge-mcp.xpi` ; sous Linux : `sha256sum 
 2. Lisez les notes de la version cible, puis installez son XPI comme ci-dessus.
 3. Conservez la sauvegarde jusqu’à vérification des bibliothèques et documents traités.
 
-Les mises à niveau de la préversion du dépôt privé restent manuelles. Le canal automatique est prêt, mais ne proposera que des versions stables vérifiées lorsque le dépôt et les fichiers seront accessibles publiquement. Les préversions s’installent toujours manuellement. Le réglage de mise à jour de Zotero contrôle l’installation des versions stables proposées. Sans version stable publiée, le flux reste vide. Installer un ancien XPI ne rétrograde pas la base. Une ancienne version peut refuser un schéma plus récent : la restauration exige une sauvegarde externe compatible.
+Les préversions s’installent et se mettent à niveau manuellement. Le canal automatique ne propose que des versions stables vérifiées. Le réglage de mise à jour de Zotero contrôle leur installation. Sans version stable publiée, le flux reste vide. Installer un ancien XPI ne rétrograde pas la base. Une ancienne version peut refuser un schéma plus récent : la restauration exige une sauvegarde externe compatible.
 
 La désactivation et la désinstallation conservent les données. Consultez [Données et confidentialité](privacy.md) avant de réinitialiser ou changer le répertoire de données Zotero.

@@ -9,7 +9,7 @@ Transformez des pièces jointes PDF sélectionnées dans Zotero en une biblioth�
 
 [Notes et toutes les versions](https://github.com/lianghx123/zoteroknowledgemcp/releases)
 
-Téléchargement actuel : 0.2.0-preview.1 pour Zotero 10.0.x. Tant que le dépôt est privé, connectez-vous à GitHub avec un compte autorisé. Le site public de documentation ne rend pas publics les fichiers privés des versions.
+Téléchargement actuel : 0.2.0-preview.1 pour Zotero 10.0.x. Le code source, le XPI publié et sa somme de contrôle sont publics et téléchargeables sans compte GitHub.
 
 ## Commencer
 
@@ -35,4 +35,4 @@ Les utilisateurs n’ont besoin ni de Node.js, npm ou Python, ni d’un serveur 
 
 Zotero conserve la gestion de la bibliothèque et des pièces jointes originales. Le module stocke les contenus dérivés localement et utilise les services configurés pour l’analyse, les embeddings et le reclassement facultatif. L’accès MCP distant public, la synchronisation cloud du module, l’import direct de résultats d’analyse arbitraires et la sauvegarde/restauration complète intégrée ne sont pas disponibles. La validation du flux complet sur environ 1 000 publications reste à effectuer.
 
-Auteur : [lianghx123](https://github.com/lianghx123). L’accès au [code et aux versions](https://github.com/lianghx123/zoteroknowledgemcp) peut nécessiter une autorisation tant que le dépôt est privé.
+Auteur : [lianghx123](https://github.com/lianghx123). Le [code et les versions](https://github.com/lianghx123/zoteroknowledgemcp) sont accessibles publiquement.

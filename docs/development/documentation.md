@@ -80,7 +80,9 @@ contrast, while the source SVG, favicon and README mark remain purple. Verify
 both theme toggles, links, button states and narrow layouts after palette changes.
 
 The deployed public URL is `https://lianghx123.github.io/zoteroknowledgemcp/`.
-Pages visibility is independent of the repository and plugin download permissions.
+The repository, handbook, preview installer and checksum are public. Readers do
+not need a GitHub account to download the release. Pages deployment and plugin
+release publication remain separate workflows.
 Localized homepages and installation pages provide version-pinned XPI and
 checksum buttons plus a release-inventory link. Update both pages and support
 status in all seven languages when distribution changes, and verify the actual
@@ -127,9 +129,7 @@ Only successful main-branch runs can publish.
 1. Confirm the intended site audience. This project is intended to publish its
    user handbook publicly; enabling Pages does not change repository visibility.
 2. In repository **Settings → Pages**, select **GitHub Actions** as the build
-   source. While the repository is private, Pages availability/access depends
-   on the account plan. If it is unavailable, keep building artifacts and enable
-   deployment after the repository becomes public or the plan supports it.
+   source. The public repository uses the existing project Pages URL above.
 3. In **Settings → Secrets and variables → Actions → Variables**, set the
    repository variable **`PUBLISH_DOCS`** to **`true`**.
 4. Run **User documentation** from the Actions tab on `main`, or push a handbook

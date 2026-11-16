@@ -2,7 +2,7 @@
 
 ## Veröffentlichung oder Download fehlt
 
-Bis zur Freigabe benötigen Sie ein GitHub-Konto mit Repository-Zugriff. Laden Sie die Release-XPI statt eines Quellarchivs herunter. Prüfen Sie bei Installationsfehlern die Zotero-Version und `SHA256SUMS`.
+Release-XPI und `SHA256SUMS` können ohne Anmeldung öffentlich heruntergeladen werden. Laden Sie die XPI statt eines Quellarchivs herunter. Prüfen Sie bei Installationsfehlern die Zotero-Version und `SHA256SUMS`.
 
 ## Keine Analyseaufgabe oder fehlendes PDF
 

@@ -2,7 +2,7 @@
 
 ## Versión o descarga no disponible
 
-Mientras el repositorio sea privado necesitas una cuenta GitHub autorizada. Descarga el XPI, no el archivo fuente. Si falla la instalación, comprueba Zotero y `SHA256SUMS`.
+El XPI publicado y `SHA256SUMS` se pueden descargar públicamente sin iniciar sesión. Descarga el XPI, no un archivo del código fuente. Si falla la instalación, comprueba la versión de Zotero y `SHA256SUMS`.
 
 ## No hay tarea o falta el PDF
 

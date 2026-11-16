@@ -3,8 +3,8 @@
 The first preview is **0.2.0-preview.1**, tagged **v0.2.0-preview.1**.
 Reviewed `v*` tags use GitHub Actions to validate, package and publish releases.
 Tags with a prerelease suffix produce GitHub pre-releases; stable tags produce
-stable releases. Repository visibility remains a separate maintainer decision.
-While private, only users with repository access can download the assets.
+stable releases. This repository and its published release assets are public;
+installer and checksum downloads do not require a GitHub account.
 npm's `private` flag remains enabled: distribution is an XPI, not an npm package.
 
 ## Release Contents and Identity
@@ -34,9 +34,8 @@ so fresh Windows and Linux checkouts use the same content identities.
 
 Zotero requires `applications.zotero.update_url`; omitting it makes the package
 invalid in native Zotero 10.0.8. Preserve its existing raw-GitHub URL so installed
-previews can find future stable releases. The current feed remains empty while
-the repository is private and there is no stable release. Public Pages hosting
-does not grant anonymous access to private raw files or release assets.
+previews can find future stable releases. The public feed remains empty because
+no stable release exists. Preview versions do not enter the stable update feed.
 
 ## Prepare and Validate
 
@@ -178,12 +177,13 @@ For public repositories it additionally downloads each XPI anonymously and
 checks those bytes. An unreachable or invalid asset fails the refresh before
 changing the current feed; inspect the failed job and recover manually.
 
-Private repositories generate verification artifacts but never advertise updates.
-After the maintainer makes this repository public, the `public` event refreshes
-the feed automatically. If no stable release exists, it remains empty. No PAT or
-extra deployment secret is needed. `npm run updates:check` generates a local
-candidate without publishing; private asset checks need `GITHUB_TOKEN` in the
-process environment. Never put a token into a command argument or repository file.
+This public repository refreshes the feed through the configured release and
+manual events; the `public` visibility event also triggers a refresh. Without a
+stable release, the feed stays empty. No PAT or extra deployment secret is needed.
+`npm run updates:check` generates a local candidate without publishing. As a safety
+boundary, the generator refuses feed publication for private repositories; their
+asset checks require `GITHUB_TOKEN` in the process environment. Never put a token
+into a command argument or repository file.
 
 Before changing the public feed, the generator checks the actual candidate with
 typechecking, the production build/full Node suite and whitespace validation.

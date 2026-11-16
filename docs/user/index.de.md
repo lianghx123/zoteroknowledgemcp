@@ -9,7 +9,7 @@ Verwandeln Sie ausgewählte Zotero-PDF-Anhänge in eine lokal durchsuchbare Wiss
 
 [Versionshinweise und alle Versionen](https://github.com/lianghx123/zoteroknowledgemcp/releases)
 
-Aktueller Download: 0.2.0-preview.1 für Zotero 10.0.x. Melden Sie sich mit einem berechtigten GitHub-Konto an, solange das Repository privat ist. Die öffentliche Dokumentation macht private Release-Dateien nicht öffentlich.
+Aktueller Download: 0.2.0-preview.1 für Zotero 10.0.x. Quellcode, Release-XPI und Prüfsumme sind öffentlich und können ohne GitHub-Konto heruntergeladen werden.
 
 ## Hier beginnen
 
@@ -35,4 +35,4 @@ Anwender benötigen weder Node.js, npm, Python noch einen separaten Hintergrunds
 
 Zotero verwaltet weiterhin die ursprüngliche Bibliothek und ihre Anhänge. Das Plugin speichert abgeleitete Inhalte lokal und nutzt konfigurierte externe Dienste für Analyse, Embeddings und optionales Reranking. Öffentlicher MCP-Fernzugriff, Plugin-Cloud-Synchronisierung, direkter Import beliebiger Analyseausgaben und vollständige Sicherungs-/Wiederherstellungswerkzeuge sind nicht verfügbar. Die Abnahme des vollständigen Ablaufs mit etwa 1.000 Arbeiten steht aus.
 
-Plugin-Autor: [lianghx123](https://github.com/lianghx123). Für [Quellcode und Veröffentlichungen](https://github.com/lianghx123/zoteroknowledgemcp) kann bis zur Freigabe des Projekts Repository-Zugriff erforderlich sein.
+Plugin-Autor: [lianghx123](https://github.com/lianghx123). [Quellcode und Veröffentlichungen](https://github.com/lianghx123/zoteroknowledgemcp) sind öffentlich zugänglich.

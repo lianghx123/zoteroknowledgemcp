@@ -5,7 +5,7 @@
 
 [Release notes and all versions](https://github.com/lianghx123/zoteroknowledgemcp/releases)
 
-Current download: 0.2.0-preview.1 for Zotero 10.0.x. While the repository is private, sign in to GitHub with an account that has repository access. A public documentation site does not make private release assets public.
+Current download: 0.2.0-preview.1 for Zotero 10.0.x. The source, release XPI and checksum are public; no GitHub account is needed to download them.
 
 ## Requirements
 
@@ -18,7 +18,6 @@ Current download: 0.2.0-preview.1 for Zotero 10.0.x. While the repository is pri
 ## Install
 
 1. Open the [preview release](https://github.com/lianghx123/zoteroknowledgemcp/releases/tag/v0.2.0-preview.1).
-   While the repository is private, sign in with an account that has access.
 2. Download **zotero-knowledge-mcp.xpi**. GitHub's source ZIP and tar archives
    are not installable plugins.
 3. In Zotero, open **Tools → Plugins**, open the gear menu and choose
@@ -45,14 +44,7 @@ On macOS, use `shasum -a 256 zotero-knowledge-mcp.xpi`; on Linux, use
 2. Read the target release's notes, then install its XPI using the same steps.
 3. Keep the backup until you have checked your libraries and processed documents.
 
-Current private-repository preview upgrades are manual. The prepared automatic
-channel accepts only verified stable releases after the repository and its
-installers become publicly accessible. Previews are always installed manually.
-Zotero's own automatic-update setting controls installation of offered stable
-updates. With no published stable release, the feed remains empty.
-Installing an older XPI does not downgrade the plugin's
-database. An older version may reject a newer schema; recovery requires a
-compatible external backup, not just the old installer.
+Preview upgrades are manual. The automatic channel accepts only verified stable releases; previews are always installed manually. Zotero's own automatic-update setting controls installation of offered stable updates. With no published stable release, the feed remains empty. Installing an older XPI does not downgrade the plugin's database. An older version may reject a newer schema; recovery requires a compatible external backup, not just the old installer.
 
 Disabling or uninstalling the plugin preserves its stored data. See
 [data and privacy](privacy.md) before resetting or switching Zotero data directories.

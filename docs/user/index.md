@@ -13,7 +13,7 @@ is pending. This is a preview with manual installation and upgrades.
 
 [Release notes and all versions](https://github.com/lianghx123/zoteroknowledgemcp/releases)
 
-Current download: 0.2.0-preview.1 for Zotero 10.0.x. While the repository is private, sign in to GitHub with an account that has repository access. A public documentation site does not make private release assets public.
+Current download: 0.2.0-preview.1 for Zotero 10.0.x. The source, release XPI and checksum are public; no GitHub account is needed to download them.
 
 ## Start here
 
@@ -44,6 +44,4 @@ embeddings and optional reranking. Public remote MCP access, plugin cloud sync,
 direct import of arbitrary parser output and integrated full backup/restore are
 not available. A 1,000-paper full-workflow acceptance is still pending.
 
-Plugin author: [lianghx123](https://github.com/lianghx123).
-[Source and releases](https://github.com/lianghx123/zoteroknowledgemcp) may require
-repository access until the project becomes public.
+Plugin author: [lianghx123](https://github.com/lianghx123). [Source and releases](https://github.com/lianghx123/zoteroknowledgemcp) are publicly accessible.

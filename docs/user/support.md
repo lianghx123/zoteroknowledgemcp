@@ -20,9 +20,7 @@ full-workflow paper capacity or independently measured retrieval quality.
 
 ## Report an issue
 
-Use the [issue tracker](https://github.com/lianghx123/zoteroknowledgemcp/issues).
-While the repository is private, access is limited to authorized accounts.
-Include:
+The [issue tracker](https://github.com/lianghx123/zoteroknowledgemcp/issues) is public. Sign in to GitHub to open or comment on an issue. Include:
 
 - Plugin version, Zotero version and operating system.
 - Steps to reproduce, expected behavior and actual behavior.

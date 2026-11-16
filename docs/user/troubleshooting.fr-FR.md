@@ -2,7 +2,7 @@
 
 ## Version ou téléchargement inaccessible
 
-Tant que le dépôt est privé, un compte GitHub autorisé est nécessaire. Téléchargez le XPI publié, pas les sources. En cas d’échec d’installation, vérifiez la version Zotero et `SHA256SUMS`.
+Le XPI publié et `SHA256SUMS` sont téléchargeables publiquement sans connexion. Téléchargez le XPI, pas une archive du code source. En cas d’échec d’installation, vérifiez la version de Zotero et `SHA256SUMS`.
 
 ## Aucune tâche ou PDF manquant
 

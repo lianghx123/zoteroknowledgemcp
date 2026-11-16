@@ -9,7 +9,7 @@
 
 [发行说明与全部版本](https://github.com/lianghx123/zoteroknowledgemcp/releases)
 
-当前下载：0.2.0-preview.1，适用于 Zotero 10.0.x。仓库为私有时，请先登录有仓库访问权限的 GitHub 账号；公开文档站点不会使私有发布附件变为公开。
+当前下载：0.2.0-preview.1，适用于 Zotero 10.0.x。源码、发布页 XPI 和校验文件均已公开，无需 GitHub 账号即可下载。
 
 ## 从这里开始
 
@@ -35,4 +35,4 @@
 
 Zotero 继续管理原始文献库和附件。插件在本地保存派生内容，通过配置的外部服务执行解析、嵌入和可选的重排。目前不提供公网远程 MCP、插件云同步、任意解析结果直接导入或完整备份恢复工具。约 1,000 篇文献的完整工作流验收仍待完成。
 
-插件作者：[lianghx123](https://github.com/lianghx123)。项目公开前，访问[源码与发布版本](https://github.com/lianghx123/zoteroknowledgemcp)可能需要仓库权限。
+插件作者：[lianghx123](https://github.com/lianghx123)。[源码与发布版本](https://github.com/lianghx123/zoteroknowledgemcp)均可公开访问。

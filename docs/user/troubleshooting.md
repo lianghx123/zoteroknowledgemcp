@@ -2,9 +2,7 @@
 
 ## The release or download is unavailable
 
-Until the repository is public, GitHub requires an account with repository
-access. Download the release XPI rather than a source archive. Confirm the
-required Zotero version and compare `SHA256SUMS` if installation fails.
+The release XPI and `SHA256SUMS` are publicly downloadable without signing in. Download the release XPI rather than a source archive. Confirm the required Zotero version and compare `SHA256SUMS` if installation fails.
 
 ## No parsing task or missing PDF
 

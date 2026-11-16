@@ -10,13 +10,13 @@
 
 ## 報告問題
 
-請使用[問題追蹤器](https://github.com/lianghx123/zoteroknowledgemcp/issues)。儲存庫為私有時僅有權限的帳號可存取。請包含：
+[問題追蹤器](https://github.com/lianghx123/zoteroknowledgemcp/issues)已公開。提交問題或留言需要登入 GitHub 帳號。請包含：
 
 - 外掛版本、Zotero 版本和作業系統。
 - 重現步驟、預期行為和實際行為。
 - 相關任務階段或去識別化錯誤資訊。
 - 如有關聯，說明 PDF 是否在本機，以及所選提供方和模型。
 
-不要附帶金鑰、權杖、完整資料目錄或私秘密值獻，儘可能使用可公開分享的材料重現。
+不要附帶金鑰、權杖、完整資料目錄或私人文獻，儘可能使用可公開分享的材料重現。
 
 作者與維護者：[lianghx123](https://github.com/lianghx123)。

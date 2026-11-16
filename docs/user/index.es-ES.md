@@ -9,7 +9,7 @@ Convierte los PDF seleccionados en Zotero en una biblioteca de conocimiento loca
 
 [Notas y todas las versiones](https://github.com/lianghx123/zoteroknowledgemcp/releases)
 
-Descarga actual: 0.2.0-preview.1 para Zotero 10.0.x. Mientras el repositorio sea privado, inicia sesión en GitHub con una cuenta autorizada. La documentación pública no hace públicos los archivos privados de las versiones.
+Descarga actual: 0.2.0-preview.1 para Zotero 10.0.x. El código fuente, el XPI publicado y su suma de verificación son públicos y se pueden descargar sin una cuenta de GitHub.
 
 ## Empieza aquí
 
@@ -35,4 +35,4 @@ No necesitas Node.js, npm, Python ni un servidor separado. Los proveedores de an
 
 Zotero sigue gestionando la biblioteca y los adjuntos originales. El complemento guarda contenido derivado localmente y utiliza los servicios configurados para análisis, embeddings y reclasificación opcional. No ofrece acceso MCP remoto público, sincronización propia en la nube, importación directa de resultados arbitrarios ni copia/restauración completa integrada. Sigue pendiente validar el flujo completo con unos 1.000 documentos.
 
-Autor: [lianghx123](https://github.com/lianghx123). El [código y las versiones](https://github.com/lianghx123/zoteroknowledgemcp) pueden requerir acceso al repositorio hasta que el proyecto sea público.
+Autor: [lianghx123](https://github.com/lianghx123). El [código y las versiones](https://github.com/lianghx123/zoteroknowledgemcp) son de acceso público.

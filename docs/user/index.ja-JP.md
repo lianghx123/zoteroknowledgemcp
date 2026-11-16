@@ -9,7 +9,7 @@ Zotero で選んだ PDF 添付ファイルを、ローカルで検索できる�
 
 [リリースノートとすべてのバージョン](https://github.com/lianghx123/zoteroknowledgemcp/releases)
 
-現在のダウンロードは Zotero 10.0.x 向けの 0.2.0-preview.1 です。リポジトリが非公開の間は、アクセス権のある GitHub アカウントでログインしてください。公開ドキュメントサイトから非公開リリースのファイルが公開されることはありません。
+現在のダウンロードは Zotero 10.0.x 向けの 0.2.0-preview.1 です。ソース、リリースの XPI とチェックサムは公開されており、GitHub アカウントなしでダウンロードできます。
 
 ## はじめに
 
@@ -35,4 +35,4 @@ Zotero で選んだ PDF 添付ファイルを、ローカルで検索できる�
 
 元のライブラリと添付ファイルは引き続き Zotero が管理します。プラグインは派生コンテンツをローカル保存し、設定した外部サービスで解析、埋め込み、任意の再ランキングを行います。公開リモート MCP、プラグインのクラウド同期、任意の解析結果の直接取り込み、完全なバックアップ・復元機能は未提供です。約 1,000 本の文献による全工程の受け入れ検証は未完了です。
 
-作者：[lianghx123](https://github.com/lianghx123)。プロジェクト公開前は[ソースとリリース](https://github.com/lianghx123/zoteroknowledgemcp)へのアクセス権が必要な場合があります。
+作者：[lianghx123](https://github.com/lianghx123)。[ソースとリリース](https://github.com/lianghx123/zoteroknowledgemcp)は公開されています。

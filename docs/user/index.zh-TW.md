@@ -9,7 +9,7 @@
 
 [發行說明與所有版本](https://github.com/lianghx123/zoteroknowledgemcp/releases)
 
-目前下載：0.2.0-preview.1，適用於 Zotero 10.0.x。儲存庫為私有時，請先登入具備存取權限的 GitHub 帳號；公開文件網站不會讓私有版本附件變為公開。
+目前下載：0.2.0-preview.1，適用於 Zotero 10.0.x。原始碼、釋出頁 XPI 和驗證檔案均已公開，無需 GitHub 帳號即可下載。
 
 ## 從這裡開始
 
@@ -35,4 +35,4 @@
 
 Zotero 繼續管理原始文獻庫和附件。外掛在本機儲存派生內容，透過設定的外部服務執行解析、嵌入和可選的重排。目前不提供公網遠端 MCP、外掛雲同步、任意解析結果直接匯入或完整備份恢復工具。約 1,000 篇文獻的完整工作流程驗收仍待完成。
 
-外掛作者：[lianghx123](https://github.com/lianghx123)。專案公開前，存取[原始碼與釋出版本](https://github.com/lianghx123/zoteroknowledgemcp)可能需要儲存庫權限。
+外掛作者：[lianghx123](https://github.com/lianghx123)。[原始碼與釋出版本](https://github.com/lianghx123/zoteroknowledgemcp)均可公開存取。
